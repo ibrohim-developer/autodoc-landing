@@ -7,6 +7,7 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import {
   historyColumns,
   historyIntroPhotos,
+  type Corner,
   type HistoryPhoto,
   type HistoryTile,
   type MilestoneKey,
@@ -21,6 +22,18 @@ const tall = "flex-[429_1_0]";
 const short = "flex-[333_1_0]";
 const columnWidth = "w-[calc(var(--u)*374)]";
 const photoSizes = "(min-width: 1024px) 470px, 340px";
+
+// Every tile has a small radius; the corners it lists in `curves` get the design's wide curve.
+const curveClasses: Record<Corner, string> = {
+  tl: "rounded-tl-[calc(var(--u)*80)]",
+  tr: "rounded-tr-[calc(var(--u)*80)]",
+  bl: "rounded-bl-[calc(var(--u)*80)]",
+  br: "rounded-br-[calc(var(--u)*80)]",
+};
+
+function tileShape(curves: Corner[] = []) {
+  return cn("rounded-[calc(var(--u)*12)]", ...curves.map((corner) => curveClasses[corner]));
+}
 
 // Green fading into the page colour and back, mirrored on every other card.
 const milestoneBackgrounds = [
@@ -116,15 +129,17 @@ function AppCard({ className }: { className?: string }) {
 }
 
 function Tile({ tile, size, background }: { tile: HistoryTile; size: string; background: string }) {
+  const className = cn(size, tileShape(tile.curves));
+
   switch (tile.kind) {
     case "photo":
-      return <Photo photo={tile} sizes={photoSizes} className={size} />;
+      return <Photo photo={tile} sizes={photoSizes} className={className} />;
     case "milestone":
-      return <Milestone id={tile.key} background={background} className={size} />;
+      return <Milestone id={tile.key} background={background} className={className} />;
     case "brand":
-      return <BrandCard className={size} />;
+      return <BrandCard className={className} />;
     case "app":
-      return <AppCard className={size} />;
+      return <AppCard className={className} />;
   }
 }
 
@@ -164,6 +179,7 @@ export function HistoryTimeline() {
           sizes="(min-width: 1024px) 730px, 340px"
           className={cn(
             tall,
+            tileShape(["tl", "tr"]),
             "group-data-pinned/pin:h-[calc(var(--u)*333)] group-data-pinned/pin:w-[calc(var(--u)*580)] group-data-pinned/pin:flex-none",
           )}
         />
@@ -172,6 +188,7 @@ export function HistoryTimeline() {
           sizes={photoSizes}
           className={cn(
             short,
+            tileShape(["tl", "tr"]),
             "group-data-pinned/pin:h-[calc(var(--u)*333)] group-data-pinned/pin:w-[calc(var(--u)*374)] group-data-pinned/pin:flex-none",
           )}
         />

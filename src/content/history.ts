@@ -23,11 +23,15 @@ export type HistoryPhotoKey =
 
 export type HistoryPhoto = { key: HistoryPhotoKey; image: StaticImageData; position?: string };
 
-export type HistoryTile =
+// Corners the design cuts with a wide curve; the rest keep a small radius.
+export type Corner = "tl" | "tr" | "bl" | "br";
+
+export type HistoryTile = (
   | ({ kind: "photo" } & HistoryPhoto)
   | { kind: "milestone"; key: MilestoneKey }
   | { kind: "brand" }
-  | { kind: "app" };
+  | { kind: "app" }
+) & { curves?: Corner[] };
 
 // Each column stacks two tiles; `tall` says which of them takes the larger share of the height.
 export type HistoryColumn = { top: HistoryTile; bottom: HistoryTile; tall: "top" | "bottom" };
@@ -40,31 +44,39 @@ export const historyIntroPhotos: [HistoryPhoto, HistoryPhoto] = [
 
 // Read left to right in chronological order.
 export const historyColumns: HistoryColumn[] = [
-  { top: { kind: "photo", key: "team", image: team }, bottom: { kind: "brand" }, tall: "top" },
+  {
+    top: { kind: "photo", key: "team", image: team, curves: ["bl"] },
+    bottom: { kind: "brand", curves: ["tl", "tr"] },
+    tall: "top",
+  },
   {
     top: { kind: "milestone", key: "founding" },
-    bottom: { kind: "photo", key: "reception", image: reception },
+    bottom: { kind: "photo", key: "reception", image: reception, curves: ["tl", "tr"] },
     tall: "bottom",
   },
   {
-    top: { kind: "photo", key: "checkpoint", image: railway },
-    bottom: { kind: "milestone", key: "firstProject" },
+    top: { kind: "photo", key: "checkpoint", image: railway, curves: ["br"] },
+    bottom: { kind: "milestone", key: "firstProject", curves: ["tr"] },
     tall: "top",
   },
   {
-    top: { kind: "milestone", key: "partnership" },
-    bottom: { kind: "photo", key: "registration", image: registration },
+    top: { kind: "milestone", key: "partnership", curves: ["bl"] },
+    bottom: { kind: "photo", key: "registration", image: registration, curves: ["tl", "tr"] },
     tall: "top",
   },
   {
-    top: { kind: "photo", key: "leadership", image: news2, position: "62% 50%" },
-    bottom: { kind: "milestone", key: "infrastructure" },
+    top: { kind: "photo", key: "leadership", image: news2, position: "62% 50%", curves: ["br"] },
+    bottom: { kind: "milestone", key: "infrastructure", curves: ["tr"] },
     tall: "bottom",
   },
-  { top: { kind: "milestone", key: "expansion" }, bottom: { kind: "app" }, tall: "top" },
   {
-    top: { kind: "photo", key: "people", image: news3 },
-    bottom: { kind: "milestone", key: "holding" },
+    top: { kind: "milestone", key: "expansion", curves: ["bl"] },
+    bottom: { kind: "app", curves: ["bl"] },
+    tall: "top",
+  },
+  {
+    top: { kind: "photo", key: "people", image: news3, curves: ["br"] },
+    bottom: { kind: "milestone", key: "holding", curves: ["tr"] },
     tall: "bottom",
   },
 ];
