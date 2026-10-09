@@ -12,7 +12,7 @@ import exchange from "@/assets/images/icons/exchange.svg";
 import integrations from "@/assets/images/icons/integrations.svg";
 
 export type DirectionKey = "it" | "payments" | "finance" | "transport" | "infrastructure" | "ai" | "edo";
-export type ProjectKey = "registration";
+export type ProjectKey = "registration" | "software" | "cloud";
 export type ProjectStatKey = "users" | "operations" | "integrations";
 
 export const directions: { key: DirectionKey; icon: StaticImageData }[] = [
@@ -25,7 +25,20 @@ export const directions: { key: DirectionKey; icon: StaticImageData }[] = [
   { key: "edo", icon: iconEdo },
 ];
 
-export const projectImages: Record<ProjectKey, StaticImageData> = { registration };
+// The software and cloud cards have their own images in the design; they borrow the registration
+// photo until those are exported.
+export const projectImages: Record<ProjectKey, StaticImageData> = {
+  registration,
+  software: registration,
+  cloud: registration,
+};
+
+// Title box widths from the design, so each title wraps where the mockup does.
+export const projectTitleWidths: Record<ProjectKey, string> = {
+  registration: "max-w-[369px]",
+  software: "max-w-[610px]",
+  cloud: "max-w-[530px]",
+};
 
 export const projectStats: { key: ProjectStatKey; icon: StaticImageData }[] = [
   { key: "users", icon: users },
@@ -33,5 +46,5 @@ export const projectStats: { key: ProjectStatKey; icon: StaticImageData }[] = [
   { key: "integrations", icon: integrations },
 ];
 
-// Real projects per direction are not in the design yet: every direction shows the sample project three times.
-export const directionProjects: ProjectKey[] = ["registration", "registration", "registration"];
+// Real projects per direction are not in the design yet: every direction shows the same three sample projects.
+export const directionProjects: ProjectKey[] = ["registration", "software", "cloud"];
