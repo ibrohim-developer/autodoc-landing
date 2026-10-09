@@ -52,18 +52,19 @@ export function ProjectCard({ project, layout = "compact" }: Props) {
             >
               {t(`projects.${project}.title`)}
             </h3>
-            <a
-              href="#"
+            {/* Project pages don't exist yet, so the arrow is an inert button rather than a link to "#". */}
+            <button
+              type="button"
               aria-label={t("open")}
               className={cn(
-                "ml-auto shrink-0 self-start rounded-md transition-opacity hover:opacity-85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand",
+                "ml-auto shrink-0 cursor-pointer self-start rounded-md transition-opacity hover:opacity-85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand",
                 wide
                   ? "@min-[1100px]:absolute @min-[1100px]:right-[25px] @min-[1100px]:bottom-3"
                   : "@min-[940px]:absolute @min-[940px]:top-[97px] @min-[940px]:right-[17px]",
               )}
             >
               <Image src={projectArrow} alt="" />
-            </a>
+            </button>
           </div>
           <p
             className={cn(
