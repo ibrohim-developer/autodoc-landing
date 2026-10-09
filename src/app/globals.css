@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #171d14;
+  --color-muted: #acb1b7;
+  --color-muted-2: #818181;
+  --color-brand: #2f8a3d;
+  --color-brand-soft: rgb(47 138 61 / 0.11);
+  --color-lime: #c7d510;
+  --color-forest: #061001;
+  --color-page: #f9f9f9;
+  --color-pill: #f5f5f5;
+  --color-placeholder: #d9d9d9;
+  --color-footer: #141414;
+  --color-accent: #a3c426;
+  --color-line: #b2b3af;
+  --color-plus: #57b13c;
+  --color-chart: #e4ede6;
+  --color-brand-tint: #e8f2ea;
+
+  --radius-card: 12px;
+  --radius-pill: 20px;
+
+  --animate-marquee: marquee 45s linear infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* Tailwind v4 resets buttons to the default cursor; restore the pointer. */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@theme inline {
+  --font-sans:
+    var(--font-sf-pro, "SF Pro Display"), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Keep the scrollbar's space when a dialog locks the scroll, so the page doesn't shift. */
+  scrollbar-gutter: stable;
+}
+
+/* Keep the page from scrolling behind an open dialog (all of them open with showModal).
+   The dark background fills the reserved scrollbar gutter beside the dialog. */
+html:has(dialog[open]) {
+  overflow: hidden;
+  background: var(--color-footer);
+}
+
+body {
+  background: var(--color-page);
+  color: var(--color-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

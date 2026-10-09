@@ -1,0 +1,231 @@
+{
+  "Metadata": {
+    "title": "Autodoc — davlat va biznes uchun raqamli yechimlar",
+    "description": "Davlat va biznes uchun raqamli tizimlarni ishlab chiqamiz va qo‘llab-quvvatlaymiz — transportni ro‘yxatdan o‘tkazishdan elektron hujjat aylanishigacha."
+  },
+  "Header": {
+    "home": "Autodoc — bosh sahifaga",
+    "contact": "Biz bilan bog‘lanish",
+    "menu": "Menyu",
+    "closeMenu": "Menyuni yopish",
+    "language": "Sayt tili"
+  },
+  "Locale": {
+    "ru": "Русский",
+    "uz": "O‘zbekcha"
+  },
+  "Nav": {
+    "home": "Bosh sahifa",
+    "media": "Media markaz",
+    "history": "Xolding tarixi",
+    "leadership": "Rahbariyat",
+    "projects": "Loyihalar",
+    "career": "Karyera",
+    "partners": "Hamkorlar",
+    "contacts": "Aloqa",
+    "breadcrumbLabel": "Navigatsiya zanjiri"
+  },
+  "Hero": {
+    "title": "Raqamli yechimlar yordamida davlat xizmatlarini tezlashtiramiz va soddalashtiramiz.",
+    "subtitle": "Davlat va biznes uchun raqamli tizimlarni ishlab chiqamiz va qo‘llab-quvvatlaymiz — transportni ro‘yxatdan o‘tkazishdan elektron hujjat aylanishigacha.",
+    "features": {
+      "govServices": "Davlat xizmatlarini raqamlashtirish",
+      "analytics": "Tizimlar va tahlil",
+      "infrastructure": "Raqamli infratuzilma"
+    }
+  },
+  "PartnerStrip": {
+    "label": "Hamkorlarimiz",
+    "logos": {
+      "iiv": "Ichki ishlar vazirligi",
+      "ovir": "Migratsiya va fuqarolikni rasmiylashtirish boshqarmasi",
+      "transportMinistry": "Transport vazirligi",
+      "temirYol": "O‘zbekiston temir yo‘llari",
+      "worldpay": "Worldpay",
+      "asbt": "ASBT",
+      "cyberpark": "Cyber Park"
+    }
+  },
+  "Stats": {
+    "eyebrow": "AUTODOC RAQAMLARDA",
+    "title": "Davlat ishonch bildirgan ko‘lam",
+    "projects": {
+      "value": "50+",
+      "label": "Loyiha",
+      "caption": "davlat va biznes uchun joriy etilgan",
+      "cta": "Loyihalarni ko‘rish"
+    },
+    "partners": {
+      "value": "12",
+      "suffix": "+",
+      "label": "Davlat hamkori",
+      "caption": "vazirliklar, idoralar va davlat kompaniyalari"
+    },
+    "services": {
+      "value": "1",
+      "suffix": "mln+",
+      "label": "Yiliga xizmat",
+      "caption": "tizimlarimiz orqali fuqarolarga"
+    }
+  },
+  "Position": {
+    "eyebrow": "BIZNING POZITSIYAMIZ",
+    "lead": "Biz texnologiyalar odamlarga xizmat qilishi kerak, deb ishonamiz. Har bir loyihamiz fuqarolar va davlat o‘rtasidagi muloqotni oddiyroq, tezroq va qulayroq qilishga qaratilgan.",
+    "body": "Davlat xizmatlari, biznes va zamonaviy texnologiyalarni yagona qulay ekotizimga birlashtiruvchi raqamli yechimlar yaratamiz. Biz jarayonlarni shunchaki avtomatlashtirishni emas, balki ularni har bir foydalanuvchi uchun tushunarli, ishonchli va qulay qilishni maqsad qilganmiz.",
+    "photos": {
+      "reception": "Autodoc ofisining qabulxonasi",
+      "team": "Autodoc xodimlari ish jarayonida",
+      "railway": "Temir yo‘l infratuzilmasi",
+      "meeting": "Autodoc jamoasi uchrashuvi"
+    }
+  },
+  "Video": {
+    "poster": "Autodoc ofisi",
+    "play": "Kompaniya haqidagi videoni ko‘rish",
+    "close": "Videoni yopish"
+  },
+  "Directions": {
+    "title": "Faoliyat yo‘nalishlari",
+    "categories": {
+      "it": "Axborot texnologiyalari",
+      "payments": "To‘lov tizimlari",
+      "finance": "Moliya",
+      "transport": "Transport",
+      "infrastructure": "Infratuzilma",
+      "ai": "Sun’iy intellekt va ma’lumotlar tahlili",
+      "edo": "Elektron hujjat aylanishi va raqamli davlat xizmatlari"
+    },
+    "projects": {
+      "registration": {
+        "title": "Ro‘yxatdan o‘tkazish va texnik ko‘rikning raqamli tizimi",
+        "description": "Transport vositalarini ro‘yxatdan o‘tkazish, texnik ko‘rikdan o‘tish va tegishli xizmatlarni olish jarayonlarini avtomatlashtirish uchun yagona raqamli platforma..",
+        "imageAlt": "Transport vositalarini ro‘yxatdan o‘tkazish punkti",
+        "stats": {
+          "users": { "value": "3 mln+", "label": "foydalanuvchi" },
+          "operations": { "value": "120 ming+", "label": "oyiga operatsiya" },
+          "integrations": { "value": "15+", "label": "integratsiya" }
+        }
+      }
+    },
+    "open": "Loyiha haqida batafsil",
+    "viewAll": "Barchasini ko‘rish"
+  },
+  "Projects": {
+    "metaTitle": "Faoliyat yo‘nalishlari — Autodoc",
+    "metaDescription": "Autodoc loyihalari yo‘nalishlar bo‘yicha: axborot texnologiyalari, to‘lov tizimlari, moliya, transport, infratuzilma, sun’iy intellekt va raqamli davlat xizmatlari.",
+    "breadcrumb": "Yo‘nalishlar",
+    "categories": {
+      "it": "Axborot texnologiyalari",
+      "payments": "To‘lov tizimlari",
+      "finance": "Moliya",
+      "transport": "Transport",
+      "infrastructure": "Infratuzilma",
+      "ai": "SI va ma’lumotlar tahlili",
+      "edo": "Raqamli davlat xizmatlari"
+    }
+  },
+  "Feedback": {
+    "title": "Qayta aloqa",
+    "subtitle": "Shaklni to‘ldiring, biz tez orada siz bilan bog‘lanamiz",
+    "manager": {
+      "name": "Ivan Mixaylovich",
+      "role": "Rivojlanish va hamkorlik bo‘yicha menejer",
+      "quote": "Vazifangizga mos yechimni tanlashga yordam beraman va hamkorlik bo‘yicha savollaringizga javob beraman."
+    },
+    "fields": {
+      "name": "F.I.Sh.",
+      "phone": "Telefon",
+      "topic": "Murojaat mavzusi",
+      "message": "Murojaat matni",
+      "consent": "Ma’lumotlarimni qayta ishlashga roziman"
+    },
+    "submit": "Yuborish",
+    "errors": {
+      "required": "Ushbu maydonni to‘ldiring",
+      "phone": "Raqamni +998 XX XXX XX XX formatida kiriting",
+      "consent": "Ma’lumotlarni qayta ishlashga roziligingizni tasdiqlang"
+    },
+    "success": {
+      "title": "Rahmat! Murojaatingiz qabul qilindi",
+      "text": "Tez orada siz bilan bog‘lanamiz.",
+      "again": "Yana murojaat yuborish"
+    }
+  },
+  "Leaders": {
+    "title": "Rahbarlar",
+    "people": {
+      "fahriddinov": { "name": "Fahriddinov Sardor", "role": "Xolding asoschisi va raisi" },
+      "inogamov": { "name": "Inogamov Sherzod", "role": "Strategiya bo‘yicha direktor" },
+      "umarov": { "name": "Umarov Murod", "role": "Investitsiyalar bo‘yicha direktor" },
+      "karimov": { "name": "Karimov Shamsiddin", "role": "Axborot texnologiyalari bo‘yicha direktor" }
+    }
+  },
+  "Trust": {
+    "title": "Bizga ishonishadi",
+    "text": "Biz o‘zaro ishonch, professionallik va raqamli texnologiyalarda mukammallikka intilishga asoslangan uzoq muddatli hamkorlik va sheriklik munosabatlarini qadrlaymiz.",
+    "logos": {
+      "iiv": "O‘zbekiston Respublikasi Ichki ishlar vazirligi",
+      "ovir": "Migratsiya va fuqarolikni rasmiylashtirish boshqarmasi",
+      "transportMinistry": "Transport vazirligi",
+      "paynet": "Paynet",
+      "orient": "Orient-IT"
+    }
+  },
+  "News": {
+    "title": "Yangiliklar",
+    "more": "Yana ko‘rish"
+  },
+  "Blog": {
+    "metaTitle": "Blog — Autodoc",
+    "metaDescription": "Autodoc yangiliklari va tadbirlari: loyihalar, davlat va biznes uchun raqamli yechimlar, jamoa hayoti.",
+    "title": "Blog",
+    "details": "Batafsil",
+    "share": "Ulashish:",
+    "shareOn": "{network} orqali ulashish",
+    "linkCopied": "Havola nusxalandi",
+    "others": "Boshqa yangiliklar",
+    "prev": "Oldingi yangiliklar",
+    "next": "Keyingi yangiliklar",
+    "posts": {
+      "registration": {
+        "title": "Ro‘yxatdan o‘tkazish va texnik ko‘rikning raqamli tizimi",
+        "excerpt": "ma’lumotlarni tekshirishdan rasmiylashtirishgacha bo‘lgan butun jarayonni qamrab oladi..",
+        "body": [
+          "Yagona raqamli platforma transport vositalarini ro‘yxatdan o‘tkazish, texnik ko‘rikdan o‘tish va tegishli xizmatlarni olish jarayonlarini avtomatlashtiradi. Tizim ma’lumotlarni tekshirishdan hujjatlarni rasmiylashtirishgacha bo‘lgan butun jarayonni qamrab oladi.",
+          "15 dan ortiq davlat va tijorat tizimlari bilan integratsiya tufayli platformadan 3 milliondan ortiq kishi foydalanmoqda, u orqali oyiga 120 mingdan ortiq operatsiya amalga oshirilmoqda."
+        ]
+      },
+      "eidGreeting": {
+        "title": "AUTODOC Holding rahbariyati jamoani Qurbon hayit bilan tabrikladi",
+        "excerpt": "Sardor Shuxratovich xodimlar uchun samimiy va o‘ziga xos video tabrik tayyorladi",
+        "body": [
+          "2026-yil 27-may kuni Qurbon hayit bayrami munosabati bilan AUTODOC Holding asoschisi va raisi Sardor Shuxratovich xodimlar uchun samimiy va o‘ziga xos video tabrik tayyorladi. Bayram kunlari xorijda bo‘lishiga qaramay, Sardor Shuxratovich jamoani shaxsan tabriklash uchun videoni oldindan yozib qo‘ydi.",
+          "Bu AUTODOC Holding korporativ madaniyatining muhim tamoyillaridan birini yana bir bor aks ettiradi: qayerda bo‘lishingizdan qat’i nazar, xodimlar bilan aloqani saqlash va jamoa ichida doimiy muloqotni qo‘llab-quvvatlash muhim. Kuchli jamoani nafaqat umumiy maqsadlar, balki o‘zaro e’tibor, hurmat va ochiq muloqot ham birlashtiradi. Video tabrikni havola orqali ko‘rish mumkin."
+        ]
+      }
+    }
+  },
+  "Contacts": {
+    "metaTitle": "Aloqa — Autodoc",
+    "metaDescription": "Autodoc bosh ofisining Toshkentdagi manzili, telefon raqami va elektron pochtasi. Biz bilan bog‘laning yoki saytda murojaat qoldiring.",
+    "office": {
+      "title": "Bosh ofis",
+      "photoAlt": "Autodoc bosh ofisi binosi",
+      "addressLabel": "Manzil:",
+      "address": "Toshkent shahri,\nFayzobod ko‘chasi, 41",
+      "phoneLabel": "Telefon raqami"
+    },
+    "mapTitle": "Autodoc bosh ofisi xaritada"
+  },
+  "Footer": {
+    "navLabel": "Sayt bo‘yicha navigatsiya",
+    "phoneLabel": "Aloqa uchun telefon:",
+    "emailLabel": "Elektron pochta",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanuvchi kelishuvi"
+  },
+  "NotFound": {
+    "title": "Sahifa topilmadi",
+    "back": "Bosh sahifaga"
+  }
+}
