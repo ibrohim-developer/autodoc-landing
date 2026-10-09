@@ -27,6 +27,7 @@ export type NavKey =
 export type NavHref = string | { pathname: string; hash?: string };
 
 export const routes = {
+  about: "/about",
   projects: "/projects",
   blog: "/blog",
   contacts: "/contacts",
@@ -44,11 +45,10 @@ export function homeSection(anchor: (typeof anchors)[keyof typeof anchors]): Nav
 }
 
 // Order matches the footer grid read column by column.
-// Pages that don't exist yet ("history") are "#" placeholders.
 export const navLinks: { key: NavKey; href: NavHref }[] = [
   { key: "home", href: homeSection(anchors.top) },
   { key: "media", href: homeSection(anchors.news) },
-  { key: "history", href: "#" },
+  { key: "history", href: routes.about },
   { key: "leadership", href: homeSection(anchors.leaders) },
   { key: "projects", href: routes.projects },
   { key: "career", href: routes.vacancies },
