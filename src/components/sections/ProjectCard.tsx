@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import projectArrow from "@/assets/images/directions/project-arrow.svg";
 import markBadge from "@/assets/images/brand/mark-badge.svg";
-import { projectImages, projectStats, projectTitleWidths, type ProjectKey } from "@/content/directions";
+import { projectCutouts, projectImages, projectStats, projectTitleWidths, type ProjectKey } from "@/content/directions";
 import { cn } from "@/lib/cn";
 
 type Props = {
@@ -18,17 +18,24 @@ type Props = {
 export function ProjectCard({ project, layout = "compact" }: Props) {
   const t = useTranslations("Directions");
   const wide = layout === "wide";
+  const cutout = projectCutouts.includes(project);
 
   return (
     <article className="@container rounded-card bg-white p-3.5">
       <div className="flex flex-col gap-5 @min-[640px]:flex-row @min-[640px]:gap-[30px]">
-        <Image
-          src={projectImages[project]}
-          alt={t(`projects.${project}.imageAlt`)}
-          sizes="(min-width: 688px) 246px, 100vw"
-          placeholder="blur"
-          className="aspect-[16/10] h-auto w-full rounded-card object-cover @min-[640px]:size-[246px] @min-[640px]:shrink-0"
-        />
+        {cutout ? (
+          <div className="flex aspect-[16/10] w-full shrink-0 items-end justify-center overflow-hidden rounded-card bg-linear-to-b from-[#1c271d] to-[#296a32] pt-[19px] @min-[640px]:size-[246px]">
+            <Image src={projectImages[project]} alt={t(`projects.${project}.imageAlt`)} className="h-full max-h-[227px] w-auto object-contain" />
+          </div>
+        ) : (
+          <Image
+            src={projectImages[project]}
+            alt={t(`projects.${project}.imageAlt`)}
+            sizes="(min-width: 688px) 246px, 100vw"
+            placeholder="blur"
+            className="aspect-[16/10] h-auto w-full rounded-card object-cover @min-[640px]:size-[246px] @min-[640px]:shrink-0"
+          />
+        )}
         <div
           className={cn(
             "relative min-w-0 flex-1 @min-[640px]:pt-[7.5px]",
