@@ -7,22 +7,18 @@ type Props = {
   paragraphs: string[];
   className?: string;
   paragraphClassName?: string;
-  // Drives the reveal from outside (0–1) instead of the block's own scroll position.
-  progress?: number;
 };
 
 // Colors words from muted to black as the block scrolls through the viewport.
-export function ScrollRevealText({ paragraphs, className, paragraphClassName, progress }: Props) {
+export function ScrollRevealText({ paragraphs, className, paragraphClassName }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const words = paragraphs.map((text) => text.split(/\s+/));
   const total = words.reduce((count, list) => count + list.length, 0);
-  const [ownRevealed, setRevealed] = useState(0);
-  const controlled = progress !== undefined;
-  const revealed = controlled ? Math.round(progress * total) : ownRevealed;
+  const [revealed, setRevealed] = useState(0);
 
   useEffect(() => {
     const element = ref.current;
-    if (!element || controlled) return;
+    if (!element) return;
 
     let frame = 0;
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -53,7 +49,7 @@ export function ScrollRevealText({ paragraphs, className, paragraphClassName, pr
       window.removeEventListener("scroll", schedule);
       window.removeEventListener("resize", schedule);
     };
-  }, [total, controlled]);
+  }, [total]);
 
   let index = 0;
   return (
