@@ -16,6 +16,7 @@
   },
   "Nav": {
     "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
     "media": "Media markaz",
     "history": "Xolding tarixi",
     "leadership": "Rahbariyat",
@@ -216,6 +217,56 @@
       "phoneLabel": "Telefon raqami"
     },
     "mapTitle": "Autodoc bosh ofisi xaritada"
+  },
+  "About": {
+    "metaTitle": "Biz haqimizda — Autodoc",
+    "metaDescription": "AUTODOC xoldingi tarixi: 2022-yilda tashkil etilganidan to davlat va biznes uchun 50 dan ortiq raqamli yechimga ega texnologik xoldinggacha.",
+    "eyebrow": "XOLDING TARIXI",
+    "title": "AUTODOC yo‘li: g‘oyadan davlat miqyosidagi loyihalarni amalga oshirishgacha",
+    "brandLabel": "AUTODOC logotipi",
+    "photos": {
+      "office": "Autodoc ofisi",
+      "meeting": "Autodoc jamoasi uchrashuvi",
+      "team": "Autodoc xodimlari ish jarayonida",
+      "reception": "Autodoc ofisining qabulxonasi",
+      "people": "Autodoc jamoasi ofisda",
+      "registration": "Avtomobillarni ro‘yxatdan o‘tkazish punkti",
+      "leadership": "Autodoc rahbariyati",
+      "checkpoint": "Texnik ko‘rik punkti",
+      "app": "Autodoc mobil ilovasi"
+    },
+    "milestones": {
+      "founding": {
+        "year": "2022",
+        "title": "Kompaniyaning tashkil etilishi",
+        "text": "Kompaniya 2022-yil 27-iyunda tashkil etilgan. Asosiy faoliyat yo‘nalishi davlat xizmatlarini avtomatlashtirish hamda fuqarolarning davlat tuzilmalari bilan muloqotini soddalashtirishga qaratilgan raqamli yechimlarni ishlab chiqish bo‘ldi."
+      },
+      "firstProject": {
+        "year": "2022",
+        "title": "Birinchi loyiha",
+        "text": "IIV va YHXB uchun onlayn arizalar tizimi ishlab chiqildi. U fuqarolarga idoralarga shaxsan bormasdan murojaat va hujjatlarni elektron shaklda topshirish imkonini berdi."
+      },
+      "partnership": {
+        "year": "2023",
+        "title": "Davlat-xususiy sheriklik",
+        "text": "Ichki ishlar vazirligi bilan raqamli yechimlarni joriy etish va fuqarolar uchun zamonaviy xizmatlarni rivojlantirishga qaratilgan davlat-xususiy sheriklik bitimi tuzildi."
+      },
+      "infrastructure": {
+        "year": "2023",
+        "title": "Infratuzilmani rivojlantirish",
+        "text": "Xolding yangi bosqichga chiqib, barcha asosiy loyihalarga ilg‘or sun’iy intellekt texnologiyalarini joriy etmoqda. Loyihalar portfeli davlat va tijorat sektorlari uchun 50 dan ortiq yechimga yetdi."
+      },
+      "expansion": {
+        "year": "2025",
+        "title": "Yo‘nalishlarning kengayishi",
+        "text": "Kompaniya yangi raqamli xizmatlarni faol rivojlantira boshladi. SafeRoad hamda onlayn arizalar va haydovchilar uchun raqamli xizmatlar platformalari kabi asosiy loyihalar amalga oshirildi."
+      },
+      "holding": {
+        "year": "2025",
+        "title": "Xoldingning shakllanishi",
+        "text": "Amalga oshirilgan loyihalar va to‘plangan tajriba asosida raqamli xizmatlar, intellektual tizimlar va infratuzilma yechimlari sohasidagi kompaniya va loyihalarni birlashtiruvchi texnologik xolding tuzilmasi shakllantirildi."
+      }
+    }
   },
   "Footer": {
     "navLabel": "Sayt bo‘yicha navigatsiya",
