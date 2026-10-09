@@ -31,6 +31,7 @@ export const routes = {
   blog: "/blog",
   contacts: "/contacts",
   vacancies: "/vacancies",
+  partners: "/partners",
 } as const;
 
 export function blogPostPath(id: string) {
@@ -51,7 +52,7 @@ export const navLinks: { key: NavKey; href: NavHref }[] = [
   { key: "leadership", href: homeSection(anchors.leaders) },
   { key: "projects", href: routes.projects },
   { key: "career", href: routes.vacancies },
-  { key: "partners", href: homeSection(anchors.partners) },
+  { key: "partners", href: routes.partners },
   { key: "contacts", href: routes.contacts },
 ];
 

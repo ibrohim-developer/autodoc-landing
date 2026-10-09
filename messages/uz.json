@@ -385,6 +385,38 @@
       }
     }
   },
+  "Partners": {
+    "metaTitle": "Hamkorlar — Autodoc",
+    "metaDescription": "Autodoc xoldingi hamkorlari: biz bilan birga raqamli xizmatlar yaratayotgan davlat idoralari va kompaniyalar.",
+    "hero": {
+      "title": "Kattaroq kelajak uchun hamkorlik",
+      "subtitle": "Biz o‘zaro ishonch, professionallik va raqamli texnologiyalarda mukammallikka intilishga asoslangan uzoq muddatli hamkorlik va sheriklik munosabatlarini qadrlaymiz.",
+      "cta": "Ariza qoldirish"
+    },
+    "title": "Hamkorlarimiz",
+    "items": {
+      "iiv": {
+        "name": "Ichki Ishlar Vazirligi",
+        "caption": "Davlat vazirligi"
+      },
+      "ovir": {
+        "name": "Migratsiya boshqarmasi",
+        "caption": "Davlat boshqarmasi"
+      },
+      "transportMinistry": {
+        "name": "Transport Vazirligi",
+        "caption": "Davlat vazirligi"
+      },
+      "paynet": {
+        "name": "Paynet",
+        "caption": "To‘lov tizimi"
+      },
+      "orient": {
+        "name": "Orient-IT",
+        "caption": "IT-kompaniya"
+      }
+    }
+  },
   "Footer": {
     "navLabel": "Sayt bo‘yicha navigatsiya",
     "phoneLabel": "Aloqa uchun telefon:",
