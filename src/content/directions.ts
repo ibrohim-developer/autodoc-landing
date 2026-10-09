@@ -7,6 +7,8 @@ import iconInfrastructure from "@/assets/images/directions/icon-infrastructure.s
 import iconAi from "@/assets/images/directions/icon-ai.svg";
 import iconEdo from "@/assets/images/directions/icon-edo.svg";
 import registration from "@/assets/images/directions/project-registration.webp";
+import software from "@/assets/images/directions/project-software.png";
+import cloud from "@/assets/images/directions/project-cloud.png";
 import users from "@/assets/images/icons/users.svg";
 import exchange from "@/assets/images/icons/exchange.svg";
 import integrations from "@/assets/images/icons/integrations.svg";
@@ -25,13 +27,10 @@ export const directions: { key: DirectionKey; icon: StaticImageData }[] = [
   { key: "edo", icon: iconEdo },
 ];
 
-// The software and cloud cards have their own images in the design; they borrow the registration
-// photo until those are exported.
-export const projectImages: Record<ProjectKey, StaticImageData> = {
-  registration,
-  software: registration,
-  cloud: registration,
-};
+export const projectImages: Record<ProjectKey, StaticImageData> = { registration, software, cloud };
+
+// Cutout images that sit on a gradient tile instead of filling it.
+export const projectCutouts: ProjectKey[] = ["software"];
 
 // Title box widths from the design, so each title wraps where the mockup does.
 export const projectTitleWidths: Record<ProjectKey, string> = {
