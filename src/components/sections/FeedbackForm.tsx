@@ -4,17 +4,12 @@ import { useState, type FormEvent } from "react";
 import Image, { type StaticImageData } from "next/image";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/cn";
+import { isValidPhone } from "@/lib/phone";
 
 type Field = "name" | "phone" | "topic" | "message" | "consent";
 type Errors = Partial<Record<Field, string>>;
 
 const FIELD_ORDER: Field[] = ["name", "phone", "topic", "message", "consent"];
-
-// Accepts +998 XX XXX XX XX (any separators) or a 9-digit local number.
-function isValidPhone(value: string) {
-  const digits = value.replace(/\D/g, "");
-  return (digits.length === 12 && digits.startsWith("998")) || digits.length === 9;
-}
 
 export function FeedbackForm({ arrowIcon }: { arrowIcon: StaticImageData }) {
   const t = useTranslations("Feedback");
