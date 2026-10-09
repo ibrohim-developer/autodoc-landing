@@ -32,7 +32,7 @@ function Photo({ photo, sizes, className }: { photo: HistoryPhoto; sizes: string
   const t = useTranslations("About.photos");
 
   return (
-    <div className={cn("relative min-h-0 overflow-hidden bg-placeholder", className)}>
+    <div className={cn("relative min-h-0 overflow-hidden rounded-card bg-placeholder", className)}>
       <Image
         src={photo.image}
         alt={t(photo.key)}
@@ -52,7 +52,7 @@ function Milestone({ id, background, className }: { id: MilestoneKey; background
   return (
     <article
       className={cn(
-        "px-[calc(var(--u)*35)] pt-[calc(var(--u)*53)] pb-[calc(var(--u)*30)] text-ink",
+        "rounded-card px-[calc(var(--u)*35)] pt-[calc(var(--u)*53)] pb-[calc(var(--u)*30)] text-ink",
         background,
         className,
       )}
@@ -78,7 +78,7 @@ function BrandCard({ className }: { className?: string }) {
       role="img"
       aria-label={t("brandLabel")}
       className={cn(
-        "flex min-h-0 flex-col items-center justify-center gap-[calc(var(--u)*39)] bg-[linear-gradient(160deg,#1b201b,#2d803a)]",
+        "flex min-h-0 flex-col items-center justify-center gap-[calc(var(--u)*39)] rounded-card bg-[linear-gradient(160deg,#1b201b,#2d803a)]",
         className,
       )}
     >
@@ -97,7 +97,7 @@ function AppCard({ className }: { className?: string }) {
       role="img"
       aria-label={t("app")}
       className={cn(
-        "flex min-h-0 justify-center overflow-hidden bg-[linear-gradient(170deg,#1c271d,var(--color-brand))] pt-[calc(var(--u)*31)]",
+        "flex min-h-0 justify-center overflow-hidden rounded-card bg-[linear-gradient(170deg,#1c271d,var(--color-brand))] pt-[calc(var(--u)*31)]",
         className,
       )}
     >
