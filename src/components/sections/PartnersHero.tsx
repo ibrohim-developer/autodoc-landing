@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl";
-// Stand-in until the design's handshake photo is exported from Figma.
-import background from "@/assets/images/feedback/background.webp";
+import background from "@/assets/images/partners/hero.webp";
 import { anchors } from "@/content/navigation";
 import { PageHero } from "./PageHero";
 
@@ -11,8 +10,7 @@ export function PartnersHero() {
   return (
     <PageHero
       image={background}
-      imageClassName="-scale-x-100 object-left"
-      scrim
+      imageClassName="object-[70%_center]"
       breadcrumb={tNav("partners")}
       title={t("title")}
       subtitle={t("subtitle")}

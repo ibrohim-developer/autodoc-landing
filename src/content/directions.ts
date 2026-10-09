@@ -7,43 +7,75 @@ import iconInfrastructure from "@/assets/images/directions/icon-infrastructure.s
 import iconAi from "@/assets/images/directions/icon-ai.svg";
 import iconEdo from "@/assets/images/directions/icon-edo.svg";
 import registration from "@/assets/images/directions/project-registration.webp";
-import software from "@/assets/images/directions/project-software.png";
-import cloud from "@/assets/images/directions/project-cloud.png";
+import safeService from "@/assets/images/directions/project-safe-service.png";
+import development from "@/assets/images/directions/project-development.png";
 import users from "@/assets/images/icons/users.svg";
-import exchange from "@/assets/images/icons/exchange.svg";
 import integrations from "@/assets/images/icons/integrations.svg";
+import checkBadge from "@/assets/images/icons/check-badge.svg";
+import calendar from "@/assets/images/icons/calendar-brand.svg";
+import message from "@/assets/images/icons/message.svg";
+import type messages from "../../messages/ru.json";
+
+type ProjectMessages = (typeof messages)["Directions"]["projects"];
+type StatsOf<K extends ProjectKey> = ProjectMessages[K] extends { stats: infer S } ? keyof S & string : never;
+type HasPhoto<K extends ProjectKey> = ProjectMessages[K] extends { imageAlt: string } ? true : false;
 
 export type DirectionKey = "it" | "payments" | "finance" | "transport" | "infrastructure" | "ai" | "edo";
-export type ProjectKey = "registration" | "software" | "cloud";
-export type ProjectStatKey = "users" | "operations" | "integrations";
+export type ProjectKey = keyof ProjectMessages;
+export type ProjectStatKey = { [K in ProjectKey]: StatsOf<K> }[ProjectKey];
 
-export const directions: { key: DirectionKey; icon: StaticImageData }[] = [
-  { key: "it", icon: iconIt },
-  { key: "payments", icon: iconPayments },
-  { key: "finance", icon: iconFinance },
-  { key: "transport", icon: iconTransport },
-  { key: "infrastructure", icon: iconInfrastructure },
-  { key: "ai", icon: iconAi },
-  { key: "edo", icon: iconEdo },
+// Each project is tied to its messages: only a project with an alt text can have a photo,
+// and it can list only the stats its messages define.
+export type Project = {
+  [K in ProjectKey]: {
+    key: K;
+    // Cutout images sit on the gradient tile instead of filling it. Projects without a photo show the direction icon there.
+    image?: HasPhoto<K> extends true ? { src: StaticImageData; cutout?: boolean } : never;
+    stats?: StatsOf<K>[];
+  };
+}[ProjectKey];
+
+// The message keys the card builds from a project. The Project type guarantees they exist,
+// but TypeScript can't follow that through a template string, so the card narrows to these.
+export type ProjectImageAltKey = { [K in ProjectKey]: HasPhoto<K> extends true ? `projects.${K}.imageAlt` : never }[ProjectKey];
+export type ProjectStatMessageKey = { [K in ProjectKey]: `projects.${K}.stats.${StatsOf<K>}.${"value" | "label"}` }[ProjectKey];
+
+export type Direction = { key: DirectionKey; icon: StaticImageData; projects: Project[] };
+
+export const directions: Direction[] = [
+  {
+    key: "it",
+    icon: iconIt,
+    projects: [
+      { key: "development", image: { src: development }, stats: ["projects", "specialists", "years"] },
+      { key: "sms", stats: ["delivery"] },
+    ],
+  },
+  { key: "payments", icon: iconPayments, projects: [{ key: "payments" }, { key: "cashRegisters" }] },
+  { key: "finance", icon: iconFinance, projects: [{ key: "cashCollection" }, { key: "accounting" }] },
+  {
+    key: "transport",
+    icon: iconTransport,
+    projects: [{ key: "registration", image: { src: registration } }, { key: "corridor" }],
+  },
+  { key: "infrastructure", icon: iconInfrastructure, projects: [{ key: "dataCenter" }] },
+  { key: "ai", icon: iconAi, projects: [{ key: "lochinKoz" }, { key: "faceId" }] },
+  {
+    key: "edo",
+    icon: iconEdo,
+    projects: [
+      { key: "safeService", image: { src: safeService, cutout: true }, stats: ["users", "services"] },
+      { key: "appeals" },
+      { key: "kiosks" },
+    ],
+  },
 ];
 
-export const projectImages: Record<ProjectKey, StaticImageData> = { registration, software, cloud };
-
-// Cutout images that sit on a gradient tile instead of filling it.
-export const projectCutouts: ProjectKey[] = ["software"];
-
-// Title box widths from the design, so each title wraps where the mockup does.
-export const projectTitleWidths: Record<ProjectKey, string> = {
-  registration: "max-w-[369px]",
-  software: "max-w-[610px]",
-  cloud: "max-w-[530px]",
+export const projectStatIcons: Record<ProjectStatKey, StaticImageData> = {
+  users,
+  services: integrations,
+  projects: checkBadge,
+  specialists: users,
+  years: calendar,
+  delivery: message,
 };
-
-export const projectStats: { key: ProjectStatKey; icon: StaticImageData }[] = [
-  { key: "users", icon: users },
-  { key: "operations", icon: exchange },
-  { key: "integrations", icon: integrations },
-];
-
-// Real projects per direction are not in the design yet: every direction shows the same three sample projects.
-export const directionProjects: ProjectKey[] = ["registration", "software", "cloud"];

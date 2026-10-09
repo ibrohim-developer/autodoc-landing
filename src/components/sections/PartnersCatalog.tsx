@@ -2,11 +2,11 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { trustLogos } from "@/content/trust";
+import { partnerCards } from "@/content/partners";
 
 const titleId = "partners-title";
 
-// The full-colour logos of the home page's "trusted by" strip, each with its name and what it is.
+// Full-colour partner logos, each with its name and what it is.
 export function PartnersCatalog() {
   const t = useTranslations("Partners");
 
@@ -14,8 +14,8 @@ export function PartnersCatalog() {
     <section aria-labelledby={titleId} className="mt-16 lg:mt-20">
       <Container>
         <SectionHeading id={titleId} title={t("title")} />
-        <ul className="mt-8 grid gap-[11px] gap-y-[13px] sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
-          {trustLogos.map((item) => (
+        <ul className="mt-8 grid auto-rows-fr gap-[11px] gap-y-[13px] sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
+          {partnerCards.map((item) => (
             <li
               key={item.key}
               className="flex min-h-[256px] flex-col items-center rounded-card bg-white px-4 pt-[30px] pb-[30px] text-center"

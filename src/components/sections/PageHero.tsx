@@ -10,8 +10,6 @@ type Props = {
   image: StaticImageData;
   // Positions the photo, e.g. where it is anchored as narrower screens crop it.
   imageClassName?: string;
-  // Darkens the left side at every width, for photos that are bright behind the text.
-  scrim?: boolean;
   breadcrumb: string;
   title: string;
   subtitle: string;
@@ -22,7 +20,7 @@ const ctaClass =
   "group mt-8 inline-flex h-[51px] items-center gap-7 rounded-card border border-white pr-7 pl-[23px] text-[20px] font-medium text-white transition hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white";
 
 // Full-bleed photo hero of the inner pages (vacancies, partners) with breadcrumbs, title and one outlined button.
-export function PageHero({ image, imageClassName = "object-center", scrim = false, breadcrumb, title, subtitle, cta }: Props) {
+export function PageHero({ image, imageClassName = "object-center", breadcrumb, title, subtitle, cta }: Props) {
   const ctaContent = (
     <>
       {cta.label}
@@ -44,10 +42,7 @@ export function PageHero({ image, imageClassName = "object-center", scrim = fals
       {/* The photo is already dark on the left at desktop widths; narrower crops need help. */}
       <div
         aria-hidden="true"
-        className={cn(
-          "absolute inset-0 -z-10 bg-linear-to-r from-forest/85 to-forest/20",
-          scrim ? "lg:via-forest/40 lg:via-45%" : "lg:hidden",
-        )}
+        className="absolute inset-0 -z-10 bg-linear-to-r from-forest/85 to-forest/20 lg:hidden"
       />
       {/* The top padding clears the absolutely positioned header. */}
       <Container className="pt-[104px] pb-16 sm:pt-[150px] lg:pb-20">

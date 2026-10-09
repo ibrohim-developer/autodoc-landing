@@ -6,21 +6,21 @@ import chevronMuted from "@/assets/images/icons/chevron-right-muted.svg";
 import chevronWhite from "@/assets/images/icons/chevron-right-white.svg";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { directionProjects, directions } from "@/content/directions";
+import { directions, type Direction } from "@/content/directions";
 import { anchors, routes } from "@/content/navigation";
 import { Link } from "@/i18n/navigation";
 import { DirectionsTabs } from "./DirectionsTabs";
 import { ProjectCard } from "./ProjectCard";
 
-function DirectionPanel() {
+function DirectionPanel({ direction }: { direction: Direction }) {
   const t = useTranslations("Directions");
 
   return (
     <>
       <ul className="flex flex-col gap-[15px]">
-        {directionProjects.map((project, index) => (
-          <li key={index}>
-            <ProjectCard project={project} />
+        {direction.projects.map((project) => (
+          <li key={project.key}>
+            <ProjectCard project={project} icon={direction.icon} />
           </li>
         ))}
       </ul>
@@ -57,7 +57,7 @@ export function Directions() {
                 icon: direction.icon,
               }))}
               panels={directions.map((direction) => (
-                <DirectionPanel key={direction.key} />
+                <DirectionPanel key={direction.key} direction={direction} />
               ))}
               chevron={chevronMuted}
               chevronActive={chevronWhite}

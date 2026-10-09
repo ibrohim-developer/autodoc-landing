@@ -4,18 +4,18 @@ import decorGlass from "@/assets/images/directions/decor-glass.webp";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { directionProjects, directions } from "@/content/directions";
+import { directions, type Direction } from "@/content/directions";
 import { ProjectCard } from "./ProjectCard";
 import { ProjectsTabs } from "./ProjectsTabs";
 
 const titleId = "projects-title";
 
-function ProjectsPanel() {
+function ProjectsPanel({ direction }: { direction: Direction }) {
   return (
     <ul className="flex flex-col gap-[15px]">
-      {directionProjects.map((project, index) => (
-        <li key={index}>
-          <ProjectCard project={project} layout="wide" />
+      {direction.projects.map((project) => (
+        <li key={project.key}>
+          <ProjectCard project={project} icon={direction.icon} layout="wide" />
         </li>
       ))}
     </ul>
@@ -47,7 +47,7 @@ export function ProjectsCatalog() {
                 label: t(`categories.${direction.key}`),
               }))}
               panels={directions.map((direction) => (
-                <ProjectsPanel key={direction.key} />
+                <ProjectsPanel key={direction.key} direction={direction} />
               ))}
             />
           </div>
