@@ -31,6 +31,8 @@ export const routes = {
   projects: "/projects",
   blog: "/blog",
   contacts: "/contacts",
+  vacancies: "/vacancies",
+  partners: "/partners",
 } as const;
 
 export function blogPostPath(id: string) {
@@ -43,15 +45,14 @@ export function homeSection(anchor: (typeof anchors)[keyof typeof anchors]): Nav
 }
 
 // Order matches the footer grid read column by column.
-// Pages that don't exist yet ("career") are "#" placeholders.
 export const navLinks: { key: NavKey; href: NavHref }[] = [
   { key: "home", href: homeSection(anchors.top) },
   { key: "media", href: homeSection(anchors.news) },
   { key: "history", href: routes.about },
   { key: "leadership", href: homeSection(anchors.leaders) },
   { key: "projects", href: routes.projects },
-  { key: "career", href: "#" },
-  { key: "partners", href: homeSection(anchors.partners) },
+  { key: "career", href: routes.vacancies },
+  { key: "partners", href: routes.partners },
   { key: "contacts", href: routes.contacts },
 ];
 

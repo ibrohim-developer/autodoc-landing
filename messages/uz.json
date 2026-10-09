@@ -268,6 +268,206 @@
       }
     }
   },
+  "Career": {
+    "metaTitle": "Karyera va vakansiyalar — Autodoc",
+    "metaDescription": "Autodoc xoldingidagi ochiq vakansiyalar. Davlat xizmatlari uchun raqamli yechimlar yaratayotgan jamoaga qo‘shiling.",
+    "hero": {
+      "title": "Xoldingimizning bir qismiga aylaning!",
+      "subtitle": "Millionlab odamlar uchun raqamli yechimlar yaratayotgan va davlat xizmatlarining kelajagini o‘zgartirayotgan jamoaga qo‘shiling",
+      "cta": "Kompaniya haqida"
+    },
+    "advantages": {
+      "eyebrow": "AFZALLIKLAR",
+      "title": "AUTODOCni nima alohida qiladi",
+      "text": "Davlat xizmatlari va millionlab odamlar hayotini o‘zgartiradigan raqamli yechimlar yaratish uchun texnologiyalar, tajriba va jamoani birlashtiramiz.",
+      "items": {
+        "projects": {
+          "title": "Muhim loyihalar",
+          "text": "Millionlab odamlar foydalanadigan yechimlarni ishlab chiqamiz"
+        },
+        "team": {
+          "title": "Kuchli jamoa",
+          "text": "Tajribali mutaxassislar va ekspertlar bilan ishlash"
+        },
+        "growth": {
+          "title": "Doimiy o‘sish",
+          "text": "Rivojlanish va davlat darajasidagi mahsulotlarga ta’sir qilish imkoniyati"
+        },
+        "environment": {
+          "title": "Zamonaviy muhit",
+          "text": "Moslashuvchan jarayonlar, zamonaviy vositalar va qulay ofislar"
+        },
+        "future": {
+          "title": "Kelajakka ta’sir",
+          "text": "Raqamli infratuzilmani rivojlantiramiz va xizmatlarni odamlar uchun qulayroq qilamiz"
+        }
+      }
+    },
+    "vacancies": {
+      "title": "Vakansiyalar",
+      "city": "Shahar: {city}",
+      "requirements": "Talablar:",
+      "categories": {
+        "development": "Dasturlash",
+        "design": "Dizayn",
+        "analytics": "Tahlil",
+        "management": "Boshqaruv"
+      },
+      "employment": {
+        "fullTime": "To‘liq bandlik",
+        "partTime": "Qisman bandlik"
+      },
+      "items": {
+        "softwareEngineer": {
+          "title": "Dasturchi muhandis",
+          "city": "Toshkent",
+          "description": "Davlat xizmatlari uchun yuqori yuklamali tizimlarni ishlab chiqish va qo‘llab-quvvatlash. Zamonaviy texnologiyalar bilan ishlash: React, Node.js, PostgreSQL, Docker.",
+          "requirements": [
+            "Kamida 3 yillik tijoriy dasturlash tajribasi",
+            "JavaScript/TypeScript bilimi",
+            "Relyatsion ma’lumotlar bazalari bilan ishlash tajribasi",
+            "CI/CD tamoyillarini tushunish"
+          ]
+        },
+        "frontendDeveloper": {
+          "title": "Frontend-dasturchi",
+          "city": "Toshkent",
+          "description": "Millionlab fuqarolar foydalanadigan davlat portallari va shaxsiy kabinetlar interfeyslarini yaratish.",
+          "requirements": [
+            "Kamida 2 yillik React tajribasi",
+            "TypeScript’ni yaxshi bilish",
+            "Moslashuvchan va qulay sahifa tuzilishi",
+            "REST API bilan ishlash tajribasi"
+          ]
+        },
+        "backendDeveloper": {
+          "title": "Backend-dasturchi",
+          "city": "Toshkent",
+          "description": "Arizalar, to‘lovlar va idoraviy tizimlar bilan integratsiyalarni qayta ishlash uchun API va servislarni loyihalash.",
+          "requirements": [
+            "Node.js yoki Go’da kamida 3 yillik tajriba",
+            "PostgreSQL va Redis bilimi",
+            "Xabarlar navbatlari bilan ishlash tajribasi",
+            "Mikroservis arxitekturasini tushunish"
+          ]
+        },
+        "mobileDeveloper": {
+          "title": "Mobil dasturchi",
+          "city": "Toshkent",
+          "description": "iOS va Android uchun davlat xizmatlaridan foydalanish ilovalarini ishlab chiqish.",
+          "requirements": [
+            "Flutter yoki React Native’da kamida 2 yillik tajriba",
+            "App Store va Google Play’da ilova chiqarish",
+            "Push-bildirishnomalar bilan ishlash",
+            "Toza arxitektura tamoyillarini bilish"
+          ]
+        },
+        "qaEngineer": {
+          "title": "QA-muhandis",
+          "city": "Toshkent",
+          "description": "Veb va mobil xizmatlar sifatini ta’minlash: qo‘lda va avtomatlashtirilgan testlash.",
+          "requirements": [
+            "Kamida 2 yillik testlash tajribasi",
+            "Test-keys va chek-listlar yozish",
+            "Playwright yoki Selenium’da avtotestlar tajribasi",
+            "Postman’da API testlash"
+          ]
+        },
+        "devopsEngineer": {
+          "title": "DevOps-muhandis",
+          "city": "Toshkent",
+          "description": "Muhim davlat tizimlari uchun infratuzilma va yetkazib berish jarayonlarini qo‘llab-quvvatlash.",
+          "requirements": [
+            "Linux bilan kamida 3 yillik tajriba",
+            "Docker va Kubernetes",
+            "CI/CD sozlash",
+            "Monitoring: Prometheus, Grafana"
+          ]
+        },
+        "productDesigner": {
+          "title": "Mahsulot dizayneri",
+          "city": "Toshkent",
+          "description": "Raqamli davlat xizmatlari uchun tushunarli interfeyslarni loyihalash — tadqiqotdan tayyor maketgacha.",
+          "requirements": [
+            "Kamida 2 yillik mahsulot dizayni tajribasi",
+            "Figma’ni yaxshi bilish",
+            "Dizayn-tizimlar bilan ishlash",
+            "Foydalanuvchi tadqiqotlarini o‘tkazish"
+          ]
+        },
+        "businessAnalyst": {
+          "title": "Biznes-tahlilchi",
+          "city": "Toshkent",
+          "description": "Davlat axborot tizimlariga talablarni yig‘ish va tavsiflash, buyurtmachilar va dasturchilar jamoasi bilan ishlash.",
+          "requirements": [
+            "Kamida 2 yillik biznes-tahlil tajribasi",
+            "Jarayonlarni BPMN’da tavsiflash",
+            "Texnik topshiriq va foydalanuvchi hikoyalarini tayyorlash",
+            "SQL bo‘yicha boshlang‘ich bilim"
+          ]
+        }
+      }
+    },
+    "resume": {
+      "open": "Rezyume qoldirish",
+      "title": "Rezyume qoldirish",
+      "subtitle": "Shaklni to‘ldiring, biz tez orada siz bilan bog‘lanamiz",
+      "close": "Yopish",
+      "fields": {
+        "name": "F.I.Sh.",
+        "phone": "Telefon",
+        "position": "Vakansiya",
+        "otherPosition": "Boshqa vakansiya",
+        "about": "O‘zingiz haqingizda",
+        "resume": "Rezyumeni yuklang",
+        "upload": "Rezyume yuklash"
+      },
+      "submit": "Yuborish",
+      "errors": {
+        "required": "Ushbu maydonni to‘ldiring",
+        "phone": "Raqamni +998 XX XXX XX XX formatida kiriting",
+        "resume": "Rezyumeni PDF, DOC yoki DOCX formatida biriktiring",
+        "fileSize": "Fayl hajmi 10 MB dan oshmasligi kerak"
+      },
+      "success": {
+        "title": "Ariza yuborildi",
+        "text": "Ariza muvaffaqiyatli yuborildi.",
+        "home": "Bosh sahifaga"
+      }
+    }
+  },
+  "Partners": {
+    "metaTitle": "Hamkorlar — Autodoc",
+    "metaDescription": "Autodoc xoldingi hamkorlari: biz bilan birga raqamli xizmatlar yaratayotgan davlat idoralari va kompaniyalar.",
+    "hero": {
+      "title": "Kattaroq kelajak uchun hamkorlik",
+      "subtitle": "Biz o‘zaro ishonch, professionallik va raqamli texnologiyalarda mukammallikka intilishga asoslangan uzoq muddatli hamkorlik va sheriklik munosabatlarini qadrlaymiz.",
+      "cta": "Ariza qoldirish"
+    },
+    "title": "Hamkorlarimiz",
+    "items": {
+      "iiv": {
+        "name": "Ichki Ishlar Vazirligi",
+        "caption": "Davlat vazirligi"
+      },
+      "ovir": {
+        "name": "Migratsiya boshqarmasi",
+        "caption": "Davlat boshqarmasi"
+      },
+      "transportMinistry": {
+        "name": "Transport Vazirligi",
+        "caption": "Davlat vazirligi"
+      },
+      "paynet": {
+        "name": "Paynet",
+        "caption": "To‘lov tizimi"
+      },
+      "orient": {
+        "name": "Orient-IT",
+        "caption": "IT-kompaniya"
+      }
+    }
+  },
   "Footer": {
     "navLabel": "Sayt bo‘yicha navigatsiya",
     "phoneLabel": "Aloqa uchun telefon:",
