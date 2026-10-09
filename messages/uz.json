@@ -106,6 +106,26 @@
           "operations": { "value": "120 ming+", "label": "oyiga operatsiya" },
           "integrations": { "value": "15+", "label": "integratsiya" }
         }
+      },
+      "software": {
+        "title": "Davlat tashkilotlari uchun dasturiy ta’minotni ishlab chiqish, chiqarish va qo‘llab-quvvatlash.",
+        "description": "Transport vositalarini ro‘yxatdan o‘tkazish, texnik ko‘rikdan o‘tish va tegishli xizmatlarni olish jarayonlarini avtomatlashtirish uchun yagona raqamli platforma..",
+        "imageAlt": "Davlat tashkilotlari uchun dasturiy ta’minot",
+        "stats": {
+          "users": { "value": "3 mln+", "label": "foydalanuvchi" },
+          "operations": { "value": "120 ming+", "label": "oyiga operatsiya" },
+          "integrations": { "value": "15+", "label": "integratsiya" }
+        }
+      },
+      "cloud": {
+        "title": "Bulutli yechimlar, ma’lumotlarni qayta ishlash markazlari, zaxira nusxalash va axborotni himoya qilish.",
+        "description": "Transport vositalarini ro‘yxatdan o‘tkazish, texnik ko‘rikdan o‘tish va tegishli xizmatlarni olish jarayonlarini avtomatlashtirish uchun yagona raqamli platforma..",
+        "imageAlt": "Bulutli yechimlar va ma’lumotlarni qayta ishlash markazlari",
+        "stats": {
+          "users": { "value": "3 mln+", "label": "foydalanuvchi" },
+          "operations": { "value": "120 ming+", "label": "oyiga operatsiya" },
+          "integrations": { "value": "15+", "label": "integratsiya" }
+        }
       }
     },
     "open": "Loyiha haqida batafsil",

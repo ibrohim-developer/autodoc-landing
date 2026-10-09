@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import projectArrow from "@/assets/images/directions/project-arrow.svg";
 import markBadge from "@/assets/images/brand/mark-badge.svg";
-import { projectImages, projectStats, type ProjectKey } from "@/content/directions";
+import { projectImages, projectStats, projectTitleWidths, type ProjectKey } from "@/content/directions";
 import { cn } from "@/lib/cn";
 
 type Props = {
@@ -40,7 +40,7 @@ export function ProjectCard({ project, layout = "compact" }: Props) {
             <h3
               className={cn(
                 "text-[20px]/[22px] font-semibold text-ink @min-[640px]:text-[22px]/[24px]",
-                !wide && "max-w-[369px]",
+                !wide && projectTitleWidths[project],
               )}
             >
               {t(`projects.${project}.title`)}
