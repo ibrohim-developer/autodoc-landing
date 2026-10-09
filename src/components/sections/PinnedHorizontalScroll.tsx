@@ -11,8 +11,12 @@ type Props = {
 // Pinning needs room for the whole track height; smaller screens swipe the track instead.
 const pinQuery = "(min-width: 1024px) and (min-height: 600px)";
 
+// Extra scroll, as a share of the panel height, that keeps the finished track on screen
+// before the page carries on down.
+const endHold = 0.6;
+
 // While pinned, the panel sticks to the viewport and vertical scrolling moves the track sideways.
-// The section is made taller by the track's overflow, so the page carries on down once the track ends.
+// The section is made taller by the track's overflow plus a pause at the end, then the page carries on down.
 // Children style themselves for the pinned layout with `group-data-pinned/pin:*`.
 export function PinnedHorizontalScroll({ heading, children, labelledBy }: Props) {
   const sectionRef = useRef<HTMLElement>(null);
@@ -49,7 +53,7 @@ export function PinnedHorizontalScroll({ heading, children, labelledBy }: Props)
     };
     const measure = () => {
       distance = Math.max(0, track.scrollWidth - panel.clientWidth);
-      section.style.height = `${panel.offsetHeight + distance}px`;
+      section.style.height = `${panel.offsetHeight * (1 + endHold) + distance}px`;
       update();
     };
 
