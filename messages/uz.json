@@ -228,10 +228,22 @@
   "Leaders": {
     "title": "Rahbarlar",
     "people": {
-      "fahriddinov": { "name": "Fahriddinov Sardor", "role": "Xolding asoschisi va raisi" },
-      "inogamov": { "name": "Inogamov Sherzod", "role": "Strategiya bo‘yicha direktor" },
-      "umarov": { "name": "Umarov Murod", "role": "Investitsiyalar bo‘yicha direktor" },
-      "karimov": { "name": "Karimov Shamsiddin", "role": "Axborot texnologiyalari bo‘yicha direktor" },
+      "fahriddinov": {
+        "name": "Fahriddinov Sardor",
+        "role": "Xolding asoschisi va raisi"
+      },
+      "inogamov": {
+        "name": "Inogamov Sherzod",
+        "role": "Strategiya bo‘yicha direktor"
+      },
+      "umarov": {
+        "name": "Umarov Murod",
+        "role": "Investitsiyalar bo‘yicha direktor"
+      },
+      "karimov": {
+        "name": "Karimov Shamsiddin",
+        "role": "Axborot texnologiyalari bo‘yicha direktor"
+      },
       "sodiqov": { "name": "Sodiqov Sayyodbek", "role": "Direktor" }
     }
   },

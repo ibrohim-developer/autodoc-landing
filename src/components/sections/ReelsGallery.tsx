@@ -119,7 +119,14 @@ export function ReelsGallery({ reels }: { reels: Reel[] }) {
           aria-label={t("close")}
           className="absolute -top-14 right-0 grid size-[46px] place-items-center rounded-full bg-field text-ink transition hover:bg-[#e4e1e1] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:-top-[51px] sm:-right-14"
         >
-          <svg viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+          <svg
+            viewBox="0 0 24 24"
+            className="size-6"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            aria-hidden="true"
+          >
             <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
           </svg>
         </button>

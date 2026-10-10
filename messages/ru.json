@@ -228,10 +228,19 @@
   "Leaders": {
     "title": "Руководители",
     "people": {
-      "fahriddinov": { "name": "Fahriddinov Sardor", "role": "Основатель и Председатель холдинга" },
-      "inogamov": { "name": "Inogamov Sherzod", "role": "Директор по стратегии" },
+      "fahriddinov": {
+        "name": "Fahriddinov Sardor",
+        "role": "Основатель и Председатель холдинга"
+      },
+      "inogamov": {
+        "name": "Inogamov Sherzod",
+        "role": "Директор по стратегии"
+      },
       "umarov": { "name": "Umarov Murod", "role": "Директор по инвестициям" },
-      "karimov": { "name": "Karimov Shamsiddin", "role": "Директор по информационным технологиям" },
+      "karimov": {
+        "name": "Karimov Shamsiddin",
+        "role": "Директор по информационным технологиям"
+      },
       "sodiqov": { "name": "Sodiqov Sayyodbek", "role": "Директор" }
     }
   },
