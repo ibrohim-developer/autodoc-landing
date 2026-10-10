@@ -16,8 +16,9 @@ function DirectionPanel({ direction }: { direction: Direction }) {
   const t = useTranslations("Directions");
 
   return (
-    <>
-      <ul className="flex flex-col gap-[15px]">
+    <div className="@container">
+      {/* Holds two cards' height (2 × 274px + gap) so a single-project direction keeps the panel's size. */}
+      <ul className="flex flex-col gap-[15px] @min-[640px]:min-h-[563px]">
         {direction.projects.map((project) => (
           <li key={project.key}>
             <ProjectCard project={project} icon={direction.icon} />
@@ -31,7 +32,7 @@ function DirectionPanel({ direction }: { direction: Direction }) {
         {t("viewAll")}
         <Image src={chevronBrand} alt="" />
       </Link>
-    </>
+    </div>
   );
 }
 

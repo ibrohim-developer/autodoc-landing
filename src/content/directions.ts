@@ -6,9 +6,19 @@ import iconTransport from "@/assets/images/directions/icon-transport.svg";
 import iconInfrastructure from "@/assets/images/directions/icon-infrastructure.svg";
 import iconAi from "@/assets/images/directions/icon-ai.svg";
 import iconEdo from "@/assets/images/directions/icon-edo.svg";
-import registration from "@/assets/images/directions/project-registration.webp";
 import safeService from "@/assets/images/directions/project-safe-service.png";
 import development from "@/assets/images/directions/project-development.png";
+import registration from "@/assets/images/projects/registration.webp";
+import corridor from "@/assets/images/projects/corridor.webp";
+import lochinKoz from "@/assets/images/projects/lochin-koz.webp";
+import faceId from "@/assets/images/projects/face-id.webp";
+import appeals from "@/assets/images/projects/appeals.webp";
+import kiosks from "@/assets/images/projects/kiosks.webp";
+import payments from "@/assets/images/projects/payments.webp";
+import cashRegisters from "@/assets/images/projects/cash-registers.webp";
+import cashCollection from "@/assets/images/projects/cash-collection.webp";
+import accounting from "@/assets/images/projects/accounting.webp";
+import dataCenter from "@/assets/images/projects/data-center.webp";
 import users from "@/assets/images/icons/users.svg";
 import integrations from "@/assets/images/icons/integrations.svg";
 import checkBadge from "@/assets/images/icons/check-badge.svg";
@@ -30,7 +40,8 @@ export type Project = {
   [K in ProjectKey]: {
     key: K;
     // Cutout images sit on the gradient tile instead of filling it. Projects without a photo show the direction icon there.
-    image?: HasPhoto<K> extends true ? { src: StaticImageData; cutout?: boolean } : never;
+    // `position` is the photo's object-position, for the design's square crop of a wider frame.
+    image?: HasPhoto<K> extends true ? { src: StaticImageData; cutout?: boolean; position?: string } : never;
     stats?: StatsOf<K>[];
   };
 }[ProjectKey];
@@ -48,25 +59,49 @@ export const directions: Direction[] = [
     icon: iconIt,
     projects: [
       { key: "development", image: { src: development }, stats: ["projects", "specialists", "years"] },
-      { key: "sms", stats: ["delivery"] },
+      { key: "sms", image: { src: kiosks }, stats: ["delivery"] },
     ],
   },
-  { key: "payments", icon: iconPayments, projects: [{ key: "payments" }, { key: "cashRegisters" }] },
-  { key: "finance", icon: iconFinance, projects: [{ key: "cashCollection" }, { key: "accounting" }] },
+  {
+    key: "payments",
+    icon: iconPayments,
+    projects: [
+      { key: "payments", image: { src: payments } },
+      { key: "cashRegisters", image: { src: cashRegisters } },
+    ],
+  },
+  {
+    key: "finance",
+    icon: iconFinance,
+    projects: [
+      { key: "cashCollection", image: { src: cashCollection } },
+      { key: "accounting", image: { src: accounting } },
+    ],
+  },
   {
     key: "transport",
     icon: iconTransport,
-    projects: [{ key: "registration", image: { src: registration } }, { key: "corridor" }],
+    projects: [
+      { key: "registration", image: { src: registration, position: "86% 50%" } },
+      { key: "corridor", image: { src: corridor, position: "38% 50%" } },
+    ],
   },
-  { key: "infrastructure", icon: iconInfrastructure, projects: [{ key: "dataCenter" }] },
-  { key: "ai", icon: iconAi, projects: [{ key: "lochinKoz" }, { key: "faceId" }] },
+  { key: "infrastructure", icon: iconInfrastructure, projects: [{ key: "dataCenter", image: { src: dataCenter } }] },
+  {
+    key: "ai",
+    icon: iconAi,
+    projects: [
+      { key: "lochinKoz", image: { src: lochinKoz, position: "37% 50%" } },
+      { key: "faceId", image: { src: faceId, position: "37% 50%" } },
+    ],
+  },
   {
     key: "edo",
     icon: iconEdo,
     projects: [
       { key: "safeService", image: { src: safeService, cutout: true }, stats: ["users", "services"] },
-      { key: "appeals" },
-      { key: "kiosks" },
+      { key: "appeals", image: { src: appeals, position: "0% 50%" } },
+      { key: "kiosks", image: { src: kiosks } },
     ],
   },
 ];

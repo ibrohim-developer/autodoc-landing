@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
+import { motion, scroll, useMotionValue } from "motion/react";
 
 type Props = {
   heading: ReactNode;
@@ -18,12 +19,13 @@ const endHold = 0.6;
 // While pinned, the panel sticks to the viewport and vertical scrolling moves the track sideways.
 // The section is made taller by the track's overflow plus a pause at the end, then the page carries on down.
 // Children style themselves for the pinned layout with `group-data-pinned/pin:*`.
+// `--inset` is where the header's Container starts its content, so pinned text can line up with the navbar.
 export function PinnedHorizontalScroll({ heading, children, labelledBy }: Props) {
   const sectionRef = useRef<HTMLElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
-  const moverRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const [pinned, setPinned] = useState(false);
+  const x = useMotionValue(0);
 
   useEffect(() => {
     const query = window.matchMedia(pinQuery);
@@ -36,21 +38,14 @@ export function PinnedHorizontalScroll({ heading, children, labelledBy }: Props)
   useLayoutEffect(() => {
     const section = sectionRef.current;
     const panel = panelRef.current;
-    const mover = moverRef.current;
     const track = trackRef.current;
-    if (!pinned || !section || !panel || !mover || !track) return;
+    if (!pinned || !section || !panel || !track) return;
 
     let distance = 0;
-    let frame = 0;
+    // How far the page has scrolled past the section's top.
+    let scrolled = 0;
 
-    const update = () => {
-      frame = 0;
-      const progress = distance ? Math.min(1, Math.max(0, -section.getBoundingClientRect().top / distance)) : 0;
-      mover.style.transform = `translate3d(${-progress * distance}px, 0, 0)`;
-    };
-    const schedule = () => {
-      if (!frame) frame = requestAnimationFrame(update);
-    };
+    const update = () => x.set(-Math.min(distance, Math.max(0, scrolled)));
     const measure = () => {
       distance = Math.max(0, track.scrollWidth - panel.clientWidth);
       section.style.height = `${panel.offsetHeight * (1 + endHold) + distance}px`;
@@ -61,28 +56,33 @@ export function PinnedHorizontalScroll({ heading, children, labelledBy }: Props)
     const observer = new ResizeObserver(measure);
     observer.observe(track);
     observer.observe(panel);
-    window.addEventListener("scroll", schedule, { passive: true });
+    const stopScroll = scroll(
+      (_progress, { y }) => {
+        scrolled = y.current - y.targetOffset;
+        update();
+      },
+      { target: section },
+    );
     return () => {
-      cancelAnimationFrame(frame);
+      stopScroll();
       observer.disconnect();
-      window.removeEventListener("scroll", schedule);
       section.style.height = "";
-      mover.style.transform = "";
+      x.set(0);
     };
-  }, [pinned]);
+  }, [pinned, x]);
 
   return (
     <section
       ref={sectionRef}
       aria-labelledby={labelledBy}
       data-pinned={pinned ? "" : undefined}
-      className="group/pin relative [--u:0.9px] lg:[--u:clamp(0.72px,calc((100svh_-_160px)/774),1.25px)]"
+      className="group/pin relative [--inset:24px] [--u:0.9px] lg:[--u:clamp(0.72px,calc((100svh_-_160px)/774),1.25px)] xl:[--inset:max(40px,calc((100cqw_-_1440px)/2_+_40px))]"
     >
       <div
         ref={panelRef}
-        className="group-data-pinned/pin:sticky group-data-pinned/pin:top-0 group-data-pinned/pin:h-svh group-data-pinned/pin:overflow-hidden group-data-pinned/pin:pt-[130px]"
+        className="@container group-data-pinned/pin:sticky group-data-pinned/pin:top-0 group-data-pinned/pin:h-svh group-data-pinned/pin:overflow-hidden group-data-pinned/pin:pt-[130px]"
       >
-        <div ref={moverRef} className="relative group-data-pinned/pin:w-max group-data-pinned/pin:will-change-transform">
+        <motion.div style={{ x }} className="relative group-data-pinned/pin:w-max group-data-pinned/pin:will-change-transform">
           {heading}
           <div
             ref={trackRef}
@@ -90,7 +90,7 @@ export function PinnedHorizontalScroll({ heading, children, labelledBy }: Props)
           >
             {children}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

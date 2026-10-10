@@ -47,7 +47,7 @@ export function homeSection(anchor: (typeof anchors)[keyof typeof anchors]): Nav
 // Order matches the footer grid read column by column.
 export const navLinks: { key: NavKey; href: NavHref }[] = [
   { key: "home", href: homeSection(anchors.top) },
-  { key: "media", href: homeSection(anchors.news) },
+  { key: "media", href: routes.blog },
   { key: "history", href: routes.about },
   { key: "leadership", href: homeSection(anchors.leaders) },
   { key: "projects", href: routes.projects },
@@ -73,6 +73,3 @@ export const socials = [
 // Map pin for the head office on the contacts page. Placed where the design shows it;
 // replace with the exact coordinates of the address once confirmed.
 export const headOffice = { lat: 41.3203, lon: 69.2673 };
-
-// Set to a YouTube or MP4 URL to enable the play button in the video section.
-export const showreelUrl = "";

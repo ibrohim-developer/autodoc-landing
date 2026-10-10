@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import app from "@/assets/images/about/app.webp";
+import glassMark from "@/assets/images/about/glass-mark.webp";
 import mark from "@/assets/images/about/mark.svg";
 import wordmark from "@/assets/images/about/wordmark.svg";
-import logoDark from "@/assets/images/brand/logo-dark.svg";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import {
   historyColumns,
@@ -18,8 +19,9 @@ import { PinnedHorizontalScroll } from "./PinnedHorizontalScroll";
 const titleId = "history-title";
 
 // Sizes are design pixels times `--u`, which PinnedHorizontalScroll fits to the viewport height.
-const tall = "flex-[429_1_0]";
-const short = "flex-[333_1_0]";
+// Tile heights are bases rather than grow ratios, so a milestone's padding can't skew the split.
+const tall = "flex-[1_1_calc(var(--u)*429)]";
+const short = "flex-[1_1_calc(var(--u)*333)]";
 const columnWidth = "w-[calc(var(--u)*374)]";
 const photoSizes = "(min-width: 1024px) 470px, 340px";
 
@@ -35,10 +37,11 @@ function tileShape(curves: Corner[] = []) {
   return cn("rounded-[calc(var(--u)*12)]", ...curves.map((corner) => curveClasses[corner]));
 }
 
-// Green fading into the page colour and back, mirrored on every other card.
+// A light green tint in two opposite corners, turned around on every other card.
+// The green stops sit outside the card, so only a pale wash of it shows.
 const milestoneBackgrounds = [
-  "bg-[linear-gradient(35deg,var(--color-brand)_0%,var(--color-page)_24%,var(--color-page)_50%,var(--color-brand)_100%)]",
-  "bg-[linear-gradient(215deg,var(--color-brand)_0%,var(--color-page)_25%,var(--color-page)_50%,var(--color-brand)_100%)]",
+  "bg-[linear-gradient(35deg,#7ede8d_-59%,var(--color-page)_35%,var(--color-page)_77%,#7ede8d_123%)]",
+  "bg-[linear-gradient(219deg,#7ede8d_-77%,var(--color-page)_32%,var(--color-page)_72%,#7ede8d_130%)]",
 ];
 
 function Photo({ photo, sizes, className }: { photo: HistoryPhoto; sizes: string; className?: string }) {
@@ -73,7 +76,7 @@ function Milestone({ id, background, className }: { id: MilestoneKey; background
       <p className="text-[length:calc(var(--u)*45)] leading-[calc(var(--u)*35)] font-bold text-black">
         {t(`${id}.year`)}
       </p>
-      <h3 className="mt-[calc(var(--u)*17)] text-[length:max(14px,calc(var(--u)*18))] leading-[1.19] text-brand">
+      <h3 className="mt-[calc(var(--u)*17)] text-[length:max(14px,calc(var(--u)*18))] leading-[1.19] text-brand uppercase">
         {t(`${id}.title`)}
       </h3>
       <p className="mt-[calc(var(--u)*17)] text-[length:max(14px,calc(var(--u)*16))] leading-[1.25] font-medium">
@@ -101,29 +104,18 @@ function BrandCard({ className }: { className?: string }) {
   );
 }
 
-// A phone outline with a sketch of the app screen, until the design's mockup can be exported.
+// The app on a phone that runs off the tile's bottom edge.
 function AppCard({ className }: { className?: string }) {
   const t = useTranslations("About.photos");
 
   return (
     <div
-      role="img"
-      aria-label={t("app")}
       className={cn(
-        "flex min-h-0 justify-center overflow-hidden bg-[linear-gradient(170deg,#1c271d,var(--color-brand))] pt-[calc(var(--u)*31)]",
+        "flex min-h-0 justify-center overflow-hidden bg-[linear-gradient(170deg,#1c271d,var(--color-brand))] pt-[calc(var(--u)*26)]",
         className,
       )}
     >
-      <div className="flex w-[calc(var(--u)*224)] flex-col gap-[calc(var(--u)*12)] rounded-t-[calc(var(--u)*34)] border-[calc(var(--u)*7)] border-b-0 border-[#0b0f0b] bg-page px-[calc(var(--u)*14)] pt-[calc(var(--u)*12)]">
-        <div className="mx-auto h-[calc(var(--u)*16)] w-[calc(var(--u)*64)] rounded-full bg-[#0b0f0b]" />
-        <Image src={logoDark} alt="" className="mt-[calc(var(--u)*6)] h-auto w-[calc(var(--u)*110)]" />
-        <div className="h-[calc(var(--u)*70)] rounded-[calc(var(--u)*12)] bg-brand" />
-        <div className="grid grid-cols-2 gap-[calc(var(--u)*8)]">
-          <div className="h-[calc(var(--u)*56)] rounded-[calc(var(--u)*10)] bg-brand-tint" />
-          <div className="h-[calc(var(--u)*56)] rounded-[calc(var(--u)*10)] bg-brand-tint" />
-        </div>
-        <div className="h-[calc(var(--u)*56)] rounded-[calc(var(--u)*10)] bg-brand-tint" />
-      </div>
+      <Image src={app} alt={t("app")} sizes="280px" className="h-auto w-[calc(var(--u)*224)] shrink-0" />
     </div>
   );
 }
@@ -152,7 +144,7 @@ export function HistoryTimeline() {
   let milestoneIndex = 0;
 
   const heading = (
-    <div className="px-4 pt-[104px] sm:px-6 sm:pt-[150px] xl:px-10 group-data-pinned/pin:absolute group-data-pinned/pin:top-[calc(var(--u)*8)] group-data-pinned/pin:left-[calc(var(--u)*40)] group-data-pinned/pin:z-10 group-data-pinned/pin:w-[calc(var(--u)*540)] group-data-pinned/pin:p-0">
+    <div className="px-4 pt-[104px] sm:px-6 sm:pt-[150px] xl:px-10 group-data-pinned/pin:absolute group-data-pinned/pin:top-[calc(var(--u)*8)] group-data-pinned/pin:left-(--inset) group-data-pinned/pin:z-10 group-data-pinned/pin:w-[calc(var(--u)*540)] group-data-pinned/pin:p-0">
       <Breadcrumbs items={[{ label: tNav("about") }]} />
       <p className="mt-8 text-[18px]/[21px] text-brand group-data-pinned/pin:mt-[calc(var(--u)*93)] group-data-pinned/pin:text-[length:max(15px,calc(var(--u)*18))]">
         {t("eyebrow")}
@@ -166,21 +158,30 @@ export function HistoryTimeline() {
     </div>
   );
 
+  // On very wide screens the title sits far in, so this column widens (the wide photo grows)
+  // to keep the next column clear of it.
   return (
     <PinnedHorizontalScroll heading={heading} labelledBy={titleId}>
       <div
         className={cn(
-          "flex shrink-0 snap-start flex-col gap-[calc(var(--u)*12)] group-data-pinned/pin:w-[calc(var(--u)*966)] group-data-pinned/pin:flex-row group-data-pinned/pin:items-end",
+          "relative flex shrink-0 snap-start flex-col gap-[calc(var(--u)*12)] group-data-pinned/pin:w-[max(calc(var(--u)*966),calc(var(--inset)_+_var(--u)*580))] group-data-pinned/pin:flex-row group-data-pinned/pin:items-end",
           columnWidth,
         )}
       >
+        {/* A faint glass logo beside the title, tucked behind the photos it runs into. */}
+        <Image
+          src={glassMark}
+          alt=""
+          sizes="1300px"
+          className="pointer-events-none absolute top-0 left-[calc(var(--inset)_+_var(--u)*294)] -z-10 hidden h-auto w-[calc(var(--u)*1042)] max-w-none opacity-15 group-data-pinned/pin:block"
+        />
         <Photo
           photo={introWide}
           sizes="(min-width: 1024px) 730px, 340px"
           className={cn(
             tall,
             tileShape(["tl", "tr"]),
-            "group-data-pinned/pin:h-[calc(var(--u)*333)] group-data-pinned/pin:w-[calc(var(--u)*580)] group-data-pinned/pin:flex-none",
+            "group-data-pinned/pin:h-[calc(var(--u)*333)] group-data-pinned/pin:w-[calc(var(--u)*580)] group-data-pinned/pin:flex-[1_0_auto]",
           )}
         />
         <Photo

@@ -10,6 +10,10 @@ const nextConfig: NextConfig = {
         loaders: ["@tailwindcss/turbopack"],
         as: "*.css",
       },
+      // Emit videos as static files; importing one returns its URL.
+      "*.mp4": {
+        type: "asset",
+      },
     },
   },
 };

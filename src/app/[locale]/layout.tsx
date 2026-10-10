@@ -4,6 +4,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { sfPro } from "@/app/fonts";
+import { SmoothScroll } from "@/components/layout/SmoothScroll";
 import { siteUrl } from "@/lib/site";
 import "../globals.css";
 
@@ -46,6 +47,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${sfPro.variable} antialiased`}>
       <body>
+        <SmoothScroll />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

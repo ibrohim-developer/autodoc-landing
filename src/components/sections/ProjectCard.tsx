@@ -1,7 +1,5 @@
 import Image, { type StaticImageData } from "next/image";
 import { useTranslations } from "next-intl";
-import projectArrow from "@/assets/images/directions/project-arrow.svg";
-import markBadge from "@/assets/images/brand/mark-badge.svg";
 import {
   projectStatIcons,
   type Project,
@@ -16,7 +14,7 @@ type Props = {
   // The direction's icon fills the image tile for projects without a photo.
   icon: StaticImageData;
   // "compact" sits beside the direction tabs on the home page, with the description clamped to three lines.
-  // "wide" spans the projects page: full description, stats pinned to the bottom with the arrow beside them.
+  // "wide" spans the projects page: full description and stats pinned to the bottom.
   layout?: "compact" | "wide";
 };
 
@@ -24,9 +22,7 @@ const tileClass =
   "flex aspect-[16/10] w-full shrink-0 justify-center overflow-hidden rounded-card bg-linear-to-b from-[#1c271d] to-[#296a32] @min-[640px]:size-[246px]";
 
 // Cards switch layout on their own width: stacked below 640px, image beside the content from 640px,
-// and the full design (stats in one row with dividers, arrow on the right) from 940px.
-// The wide arrow moves to the bottom right only from 1100px, where the stats row has room for it;
-// without stats, the content keeps that corner clear so a long description can't run under the arrow.
+// and the full design (stats in one row with dividers) from 940px.
 export function ProjectCard({ project, icon, layout = "compact" }: Props) {
   const t = useTranslations("Directions");
   const wide = layout === "wide";
@@ -60,32 +56,18 @@ export function ProjectCard({ project, icon, layout = "compact" }: Props) {
             sizes="(min-width: 688px) 246px, 100vw"
             placeholder="blur"
             className="aspect-[16/10] h-auto w-full rounded-card object-cover @min-[640px]:size-[246px] @min-[640px]:shrink-0"
+            style={image.position ? { objectPosition: image.position } : undefined}
           />
         )}
         <div
           className={cn(
-            "relative min-w-0 flex-1 @min-[640px]:pt-[7.5px]",
+            "min-w-0 flex-1 @min-[640px]:pt-[7.5px]",
             wide && "@min-[640px]:flex @min-[640px]:flex-col @min-[940px]:pb-[9px]",
-            wide && stats.length === 0 && "@min-[1100px]:pb-[66px]",
           )}
         >
-          <div className={cn("flex items-center gap-4", wide && "@min-[940px]:gap-5")}>
-            <Image src={markBadge} alt="" className="shrink-0" />
-            <h3 className="text-[20px]/[22px] font-semibold text-ink @min-[640px]:text-[22px]/[24px]">
-              {t(`projects.${key}.title`)}
-            </h3>
-            <a
-              href="#"
-              aria-label={t("open")}
-              className={cn(
-                "ml-auto shrink-0 self-start rounded-md transition-opacity hover:opacity-85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand",
-                !wide && "@min-[940px]:absolute @min-[940px]:top-[97px] @min-[940px]:right-[17px]",
-                wide && "@min-[1100px]:absolute @min-[1100px]:right-[25px] @min-[1100px]:bottom-3",
-              )}
-            >
-              <Image src={projectArrow} alt="" />
-            </a>
-          </div>
+          <h3 className="text-[20px]/[22px] font-semibold text-ink @min-[640px]:text-[22px]/[24px]">
+            {t(`projects.${key}.title`)}
+          </h3>
           <p
             className={cn(
               "mt-4 text-base/[19px] text-muted",

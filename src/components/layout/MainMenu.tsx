@@ -52,6 +52,7 @@ export function MainMenu({ icon, tone = "light" }: Props) {
       <dialog
         ref={dialogRef}
         aria-label={t("Header.menu")}
+        data-lenis-prevent
         className="m-0 size-full max-h-none max-w-none overflow-x-hidden overflow-y-auto bg-footer p-0 text-white opacity-0 transition-[opacity,display,overlay] duration-300 ease-out transition-discrete backdrop:bg-transparent open:opacity-100 starting:open:opacity-0"
       >
         <div className="relative isolate flex min-h-full flex-col overflow-hidden">

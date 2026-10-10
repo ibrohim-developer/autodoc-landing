@@ -4,6 +4,7 @@ import { hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { Header } from "@/components/layout/Header";
 import { BlogCatalog } from "@/components/sections/BlogCatalog";
+import { BlogReels } from "@/components/sections/BlogReels";
 import { Feedback } from "@/components/sections/Feedback";
 import { Footer } from "@/components/layout/Footer";
 import { routes } from "@/content/navigation";
@@ -35,6 +36,7 @@ export default function BlogPage() {
       <Header variant="page" />
       <main className="overflow-x-clip">
         <BlogCatalog />
+        <BlogReels />
         <Feedback />
       </main>
       <Footer />

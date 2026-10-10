@@ -91,6 +91,7 @@ export function ResumeDialogProvider({ positions, children }: { positions: Posit
       <dialog
         ref={dialogRef}
         aria-labelledby={sent ? "resume-success-title" : "resume-title"}
+        data-lenis-prevent
         onClick={(event) => {
           if (event.target === event.currentTarget) close();
         }}

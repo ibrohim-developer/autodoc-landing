@@ -74,16 +74,18 @@
     "lead": "Biz texnologiyalar odamlarga xizmat qilishi kerak, deb ishonamiz. Har bir loyihamiz fuqarolar va davlat o‘rtasidagi muloqotni oddiyroq, tezroq va qulayroq qilishga qaratilgan.",
     "body": "Davlat xizmatlari, biznes va zamonaviy texnologiyalarni yagona qulay ekotizimga birlashtiruvchi raqamli yechimlar yaratamiz. Biz jarayonlarni shunchaki avtomatlashtirishni emas, balki ularni har bir foydalanuvchi uchun tushunarli, ishonchli va qulay qilishni maqsad qilganmiz.",
     "photos": {
-      "reception": "Autodoc ofisining qabulxonasi",
-      "team": "Autodoc xodimlari ish jarayonida",
-      "railway": "Temir yo‘l infratuzilmasi",
-      "meeting": "Autodoc jamoasi uchrashuvi"
+      "entrance": "Autodoc binosining kirish qismi",
+      "aerial": "Texnik ko‘rik markazining yuqoridan ko‘rinishi",
+      "parking": "Autodoc binosi yonidagi avtoturargoh",
+      "pavilion": "Autodoc hududidagi bog‘ va pavilon",
+      "inspectors": "Texnik ko‘rik markazi mutaxassislari",
+      "inspection": "Mutaxassis avtomobilni ko‘rikdan o‘tkazmoqda",
+      "building": "Texnik ko‘rik markazi binosi",
+      "bays": "Texnik ko‘rik markazining boks liniyalari"
     }
   },
   "Video": {
-    "poster": "Autodoc ofisi",
-    "play": "Kompaniya haqidagi videoni ko‘rish",
-    "close": "Videoni yopish"
+    "play": "Kompaniya haqidagi videoni ko‘rish"
   },
   "Directions": {
     "title": "Faoliyat yo‘nalishlari",
@@ -110,46 +112,55 @@
       "sms": {
         "title": "SMS-aggregator",
         "description": "Kompaniyalar va ularning mijozlari o‘rtasida SMS-xabarlarni avtomatik yuborish uchun mo‘ljallangan platforma. Yechim mamlakatdagi mobil aloqa operatorlari orqali tasdiqlash kodlari, xizmat bildirishnomalari va axborot xabarlarini yetkazib berishni ta’minlab, biznesning mijozlar bilan ishonchli aloqasini yo‘lga qo‘yishga yordam beradi.",
+        "imageAlt": "Biometrik Safe Service infokiosklari",
         "stats": {
           "delivery": { "value": "99%", "label": "xabarlar yetkazilishi" }
         }
       },
       "payments": {
         "title": "To‘lov tizimi",
-        "description": "Fuqarolar, biznes va davlat tashkilotlari o‘rtasidagi hisob-kitoblarni amalga oshirish uchun mo‘ljallangan to‘lov infratuzilmasi. Tizim davlat va tijorat xizmatlari uchun to‘lovlarni qabul qilish va qayta ishlashni ta’minlab, onlayn hamda oflayn kanallar orqali hisob-kitoblarni amalga oshirish imkonini beradi."
+        "description": "Fuqarolar, biznes va davlat tashkilotlari o‘rtasidagi hisob-kitoblarni amalga oshirish uchun mo‘ljallangan to‘lov infratuzilmasi. Tizim davlat va tijorat xizmatlari uchun to‘lovlarni qabul qilish va qayta ishlashni ta’minlab, onlayn hamda oflayn kanallar orqali hisob-kitoblarni amalga oshirish imkonini beradi.",
+        "imageAlt": "To‘lov terminali orqali smartfon bilan xizmatlar uchun to‘lov"
       },
       "cashRegisters": {
         "title": "Onlayn-kassalar",
-        "description": "Qonunchilik talablariga muvofiq hisob-kitoblarni avtomatlashtirish va fiskal operatsiyalarni amalga oshirish uchun mo‘ljallangan raqamli kassa yechimlari. Ular biznesga savdolar hisobini yuritish, fiskal cheklarni shakllantirish va moliyaviy operatsiyalarning shaffofligini ta’minlashga yordam beradi."
+        "description": "Qonunchilik talablariga muvofiq hisob-kitoblarni avtomatlashtirish va fiskal operatsiyalarni amalga oshirish uchun mo‘ljallangan raqamli kassa yechimlari. Ular biznesga savdolar hisobini yuritish, fiskal cheklarni shakllantirish va moliyaviy operatsiyalarning shaffofligini ta’minlashga yordam beradi.",
+        "imageAlt": "Do‘kondagi fiskal printerli onlayn-kassa"
       },
       "cashCollection": {
         "title": "Inkassatsiya",
-        "description": "Biznes va tashkilotlar uchun naqd pul mablag‘larini yig‘ish, tashish va qayta ishlash bo‘yicha kompleks xizmatlar. Xavfsizlik va nazoratning puxta yo‘lga qo‘yilgan jarayonlari mablag‘larni qabul qilishdan tortib, belgilangan manzilga yetkazishgacha bo‘lgan barcha bosqichlarda operatsiyalar ishonchliligini ta’minlaydi."
+        "description": "Biznes va tashkilotlar uchun naqd pul mablag‘larini yig‘ish, tashish va qayta ishlash bo‘yicha kompleks xizmatlar. Xavfsizlik va nazoratning puxta yo‘lga qo‘yilgan jarayonlari mablag‘larni qabul qilishdan tortib, belgilangan manzilga yetkazishgacha bo‘lgan barcha bosqichlarda operatsiyalar ishonchliligini ta’minlaydi.",
+        "imageAlt": "Inkassatorlar zirhli avtomobil yonida naqd pul sumkalarini qabul qilmoqda"
       },
       "accounting": {
         "title": "Buxgalteriya konsaltingi",
-        "description": "Buxgalteriya hisobi, soliqqa tortish va moliyaviy hisobot masalalarida biznes uchun professional maslahat va amaliy ko‘mak. Kompaniyalarga hisob yuritish jarayonlarini yo‘lga qo‘yish, qonunchilik talablariga rioya qilish va ishonchli moliyaviy ma’lumotlar asosida qarorlar qabul qilishda yordam beramiz."
+        "description": "Buxgalteriya hisobi, soliqqa tortish va moliyaviy hisobot masalalarida biznes uchun professional maslahat va amaliy ko‘mak. Kompaniyalarga hisob yuritish jarayonlarini yo‘lga qo‘yish, qonunchilik talablariga rioya qilish va ishonchli moliyaviy ma’lumotlar asosida qarorlar qabul qilishda yordam beramiz.",
+        "imageAlt": "Noutbukdagi moliyaviy hisobot va tahlillar"
       },
       "registration": {
         "title": "Transport vositalarini ro‘yxatdan o‘tkazish va texnik ko‘rikdan o‘tkazish tizimi",
         "description": "Yo‘l harakati xavfsizligi xizmati (YHXX) texnik ko‘rik punktlarida transport vositalarini ro‘yxatdan o‘tkazish va texnik ko‘rikdan o‘tkazish jarayonlarini raqamlashtirdik. Ichki ish jarayonlarini avtomatlashtirish va hujjatlarni rasmiylashtirishni soddalashtirish orqali fuqarolarga xizmat ko‘rsatish tezligi va shaffofligini oshirdik. Natijada navbatlar qisqarib, xodimlar zimmasidagi yuklama kamaydi.",
-        "imageAlt": "Transport vositalarini ro‘yxatdan o‘tkazish punkti"
+        "imageAlt": "AUTODOC xodimi avtomobilni texnik ko‘rikdan o‘tkazmoqda"
       },
       "corridor": {
         "title": "Qizil va yashil yo‘lak",
-        "description": "YHXX markazlariga tashrif buyuruvchilarni tegishli yo‘nalishlarga taqsimlash tizimi. Tizim fuqarolarning qarzdorligi mavjudligini oldindan tekshiradi va natijalarga qarab ularni tegishli xizmat ko‘rsatish yo‘nalishiga yo‘naltiradi. Bu fuqarolarga xizmat ko‘rsatish jarayonini tezlashtirish va xodimlar ish yuklamasini kamaytirishga yordam beradi."
+        "description": "YHXX markazlariga tashrif buyuruvchilarni tegishli yo‘nalishlarga taqsimlash tizimi. Tizim fuqarolarning qarzdorligi mavjudligini oldindan tekshiradi va natijalarga qarab ularni tegishli xizmat ko‘rsatish yo‘nalishiga yo‘naltiradi. Bu fuqarolarga xizmat ko‘rsatish jarayonini tezlashtirish va xodimlar ish yuklamasini kamaytirishga yordam beradi.",
+        "imageAlt": "YHXX markazidagi qizil va yashil yo‘lakli yo‘naltirish terminali"
       },
       "dataCenter": {
         "title": "Ma’lumotlarni qayta ishlash markazi",
-        "description": "Tier III darajasidagi ma’lumotlarni qayta ishlash markazi ma’lumotlarni saqlash va qayta ishlash uchun ishonchli infratuzilmani taqdim etadi. Markaz davlat tashkilotlari, banklar, telekommunikatsiya operatorlari, fintex kompaniyalari va SaaS xizmatlari uchun hisoblash quvvatlari hamda ma’lumotlarni saqlash resurslarini ta’minlaydi. Infratuzilma tizimlarning uzluksiz ishlashi, xizmatlarning yuqori darajada mavjudligi va ma’lumotlar xavfsizligiga yo‘naltirilgan."
+        "description": "Tier III darajasidagi ma’lumotlarni qayta ishlash markazi ma’lumotlarni saqlash va qayta ishlash uchun ishonchli infratuzilmani taqdim etadi. Markaz davlat tashkilotlari, banklar, telekommunikatsiya operatorlari, fintex kompaniyalari va SaaS xizmatlari uchun hisoblash quvvatlari hamda ma’lumotlarni saqlash resurslarini ta’minlaydi. Infratuzilma tizimlarning uzluksiz ishlashi, xizmatlarning yuqori darajada mavjudligi va ma’lumotlar xavfsizligiga yo‘naltirilgan.",
+        "imageAlt": "Ma’lumotlarni qayta ishlash markazining server zali"
       },
       "lochinKoz": {
         "title": "«Lochin ko‘z»",
-        "description": "Sun’iy intellekt asosidagi videoanalitika tizimi yo‘l harakati jarayonida transport vositalarini taniydi va ular haqidagi ma’lumotlarni davlat ma’lumotlar bazalari bilan solishtiradi. Yechim yo‘l harakati qoidabuzarliklarini aniqlash, belgilangan majburiyatlarning bajarilishini nazorat qilish va yo‘l harakati ustidan nazorat samaradorligini oshirishga xizmat qiladi."
+        "description": "Sun’iy intellekt asosidagi videoanalitika tizimi yo‘l harakati jarayonida transport vositalarini taniydi va ular haqidagi ma’lumotlarni davlat ma’lumotlar bazalari bilan solishtiradi. Yechim yo‘l harakati qoidabuzarliklarini aniqlash, belgilangan majburiyatlarning bajarilishini nazorat qilish va yo‘l harakati ustidan nazorat samaradorligini oshirishga xizmat qiladi.",
+        "imageAlt": "Operator yo‘l harakati videotahlilini kuzatmoqda"
       },
       "faceId": {
         "title": "Face ID",
-        "description": "Raqamli xizmatlarda foydalanish uchun mo‘ljallangan biometrik identifikatsiya va davlat raqam belgilarini aniqlash texnologiyasi. Yechim shaxsni tasdiqlash va transport vositalarini identifikatsiya qilish orqali davlat xizmatlarini ko‘rsatishda xavfsizlikni kuchaytirish hamda ma’lumotlarning ishonchliligini ta’minlashga yordam beradi."
+        "description": "Raqamli xizmatlarda foydalanish uchun mo‘ljallangan biometrik identifikatsiya va davlat raqam belgilarini aniqlash texnologiyasi. Yechim shaxsni tasdiqlash va transport vositalarini identifikatsiya qilish orqali davlat xizmatlarini ko‘rsatishda xavfsizlikni kuchaytirish hamda ma’lumotlarning ishonchliligini ta’minlashga yordam beradi.",
+        "imageAlt": "Yuz bo‘yicha biometrik identifikatsiya va raqamlarni aniqlash terminali"
       },
       "safeService": {
         "title": "Safe Service",
@@ -162,14 +173,15 @@
       },
       "appeals": {
         "title": "YHXXga onlayn murojaatlar",
-        "description": "Fuqarolar va YHXX o‘rtasidagi elektron muloqot tizimi. U fuqarolarga idoraga shaxsan tashrif buyurmasdan murojaat yuborish, uning ko‘rib chiqilish jarayonini kuzatish va javob olish imkonini beradi. Raqamli format hujjat aylanishini soddalashtiradi va murojaatlarni ko‘rib chiqish jarayonining shaffofligini oshiradi."
+        "description": "Fuqarolar va YHXX o‘rtasidagi elektron muloqot tizimi. U fuqarolarga idoraga shaxsan tashrif buyurmasdan murojaat yuborish, uning ko‘rib chiqilish jarayonini kuzatish va javob olish imkonini beradi. Raqamli format hujjat aylanishini soddalashtiradi va murojaatlarni ko‘rib chiqish jarayonining shaffofligini oshiradi.",
+        "imageAlt": "Noutbuk va smartfonda YHXXga onlayn murojaat"
       },
       "kiosks": {
         "title": "Biometrik identifikatsiyaga ega infokiosklar",
-        "description": "Haydovchilik guvohnomalari, ID-kartalar va transport vositalarining texnik pasportlarini rasmiylashtirish hamda olish uchun mo‘ljallangan o‘z-o‘ziga xizmat ko‘rsatish terminallari. Biometrik identifikatsiya hujjatlarni berish jarayonida qo‘shimcha xavfsizlikni ta’minlaydi. Hujjatlarni yetkazib berish imkoniyati esa davlat xizmatlaridan foydalanishni yanada qulaylashtiradi."
+        "description": "Haydovchilik guvohnomalari, ID-kartalar va transport vositalarining texnik pasportlarini rasmiylashtirish hamda olish uchun mo‘ljallangan o‘z-o‘ziga xizmat ko‘rsatish terminallari. Biometrik identifikatsiya hujjatlarni berish jarayonida qo‘shimcha xavfsizlikni ta’minlaydi. Hujjatlarni yetkazib berish imkoniyati esa davlat xizmatlaridan foydalanishni yanada qulaylashtiradi.",
+        "imageAlt": "Biometrik Safe Service infokiosklari"
       }
     },
-    "open": "Loyiha haqida batafsil",
     "viewAll": "Barchasini ko‘rish"
   },
   "Projects": {
@@ -190,7 +202,7 @@
     "title": "Qayta aloqa",
     "subtitle": "Shaklni to‘ldiring, biz tez orada siz bilan bog‘lanamiz",
     "manager": {
-      "name": "Ivan Mixaylovich",
+      "name": "Shahnoza Rustamovna",
       "role": "Rivojlanish va hamkorlik bo‘yicha menejer",
       "quote": "Vazifangizga mos yechimni tanlashga yordam beraman va hamkorlik bo‘yicha savollaringizga javob beraman."
     },
@@ -248,6 +260,14 @@
     "others": "Boshqa yangiliklar",
     "prev": "Oldingi yangiliklar",
     "next": "Keyingi yangiliklar",
+    "more": "Yana ko‘rish",
+    "reels": {
+      "title": "Bizning sahifamiz",
+      "open": "{number}-videoni ko‘rish",
+      "video": "{number}-video",
+      "play": "Ijro etish",
+      "close": "Yopish"
+    },
     "posts": {
       "registration": {
         "title": "Ro‘yxatdan o‘tkazish va texnik ko‘rikning raqamli tizimi",
@@ -286,15 +306,15 @@
     "title": "AUTODOC yo‘li: g‘oyadan davlat miqyosidagi loyihalarni amalga oshirishgacha",
     "brandLabel": "AUTODOC logotipi",
     "photos": {
-      "office": "Autodoc ofisi",
-      "meeting": "Autodoc jamoasi uchrashuvi",
+      "office": "Autodoc ofisida",
+      "building": "Autodoc binosi",
+      "inspectionCenter": "Texnik ko‘rik markazi",
+      "facade": "Autodoc binosining fasadi",
+      "inspection": "Avtomobilni texnik ko‘rikdan o‘tkazish",
       "team": "Autodoc xodimlari ish jarayonida",
-      "reception": "Autodoc ofisining qabulxonasi",
-      "people": "Autodoc jamoasi ofisda",
-      "registration": "Avtomobillarni ro‘yxatdan o‘tkazish punkti",
-      "leadership": "Autodoc rahbariyati",
-      "checkpoint": "Texnik ko‘rik punkti",
-      "app": "Autodoc mobil ilovasi"
+      "inspectionTeam": "Texnik ko‘rik markazi jamoasi",
+      "openOffice": "Autodoc jamoasi ofisda",
+      "app": "Safe Service mobil ilovasi"
     },
     "milestones": {
       "founding": {
