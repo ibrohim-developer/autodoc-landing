@@ -54,6 +54,7 @@ export function ProjectCard({ project, icon, layout = "compact" }: Props) {
             src={image.src}
             alt={imageAlt}
             sizes="(min-width: 688px) 246px, 100vw"
+            quality={90}
             placeholder="blur"
             className="aspect-[16/10] h-auto w-full rounded-card object-cover @min-[640px]:size-[246px] @min-[640px]:shrink-0"
             style={image.position ? { objectPosition: image.position } : undefined}
