@@ -60,9 +60,9 @@ export const contacts = {
   phone: "+998 55 505 75 75",
   phoneHref: "tel:+998555057575",
   email: "info@autodoc.uz",
-  // Social profile URLs are not in the design yet.
+  // Telegram URL is not in the design yet.
   telegram: "#",
-  instagram: "#",
+  instagram: "https://www.instagram.com/autodoc_holding/",
 };
 
 export const socials = [
