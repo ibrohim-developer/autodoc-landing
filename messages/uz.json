@@ -172,8 +172,8 @@
         }
       },
       "appeals": {
-        "title": "YHXXga onlayn murojaatlar",
-        "description": "Fuqarolar va YHXX o‘rtasidagi elektron muloqot tizimi. U fuqarolarga idoraga shaxsan tashrif buyurmasdan murojaat yuborish, uning ko‘rib chiqilish jarayonini kuzatish va javob olish imkonini beradi. Raqamli format hujjat aylanishini soddalashtiradi va murojaatlarni ko‘rib chiqish jarayonining shaffofligini oshiradi.",
+        "title": "Elektron arizalar",
+        "description": "YHXX bo‘linmalariga fuqarolar tomonidan bildirilgan murojaatlarni elektron ariza shaklida shakllantirish tizimi. Tizim murojaatlarni elektron formatga o‘tkazish orqali hujjatlarni rasmiylashtirish jarayonini soddalashtiradi va qog‘oz hujjatlar aylanishini kamaytiradi.",
         "imageAlt": "Noutbuk va smartfonda YHXXga onlayn murojaat"
       },
       "kiosks": {
@@ -231,7 +231,8 @@
       "fahriddinov": { "name": "Fahriddinov Sardor", "role": "Xolding asoschisi va raisi" },
       "inogamov": { "name": "Inogamov Sherzod", "role": "Strategiya bo‘yicha direktor" },
       "umarov": { "name": "Umarov Murod", "role": "Investitsiyalar bo‘yicha direktor" },
-      "karimov": { "name": "Karimov Shamsiddin", "role": "Axborot texnologiyalari bo‘yicha direktor" }
+      "karimov": { "name": "Karimov Shamsiddin", "role": "Axborot texnologiyalari bo‘yicha direktor" },
+      "sodiqov": { "name": "Sodiqov Sayyodbek", "role": "Direktor" }
     }
   },
   "Trust": {
