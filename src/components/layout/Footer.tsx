@@ -70,8 +70,8 @@ export function Footer() {
                   <a
                     href={social.href}
                     aria-label={social.name}
-                    // Real profiles open in a new tab; "#" placeholders stay put.
-                    {...(social.href !== "#" && { target: "_blank", rel: "noopener noreferrer" })}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="grid size-[49px] place-items-center rounded-full bg-white/5 transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                   >
                     <Image src={social.icon} alt="" />

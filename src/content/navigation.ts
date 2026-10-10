@@ -1,4 +1,4 @@
-import telegram from "@/assets/images/icons/telegram.svg";
+import linkedin from "@/assets/images/icons/linkedin.svg";
 import instagram from "@/assets/images/icons/instagram.svg";
 
 // Section anchors used for on-page navigation.
@@ -60,13 +60,12 @@ export const contacts = {
   phone: "+998 55 505 75 75",
   phoneHref: "tel:+998555057575",
   email: "info@autodoc.uz",
-  // Telegram URL is not in the design yet.
-  telegram: "#",
+  linkedin: "https://www.linkedin.com/company/autodoc-holding",
   instagram: "https://www.instagram.com/autodoc_holding/",
 };
 
 export const socials = [
-  { name: "Telegram", href: contacts.telegram, icon: telegram },
+  { name: "LinkedIn", href: contacts.linkedin, icon: linkedin },
   { name: "Instagram", href: contacts.instagram, icon: instagram },
 ];
 
