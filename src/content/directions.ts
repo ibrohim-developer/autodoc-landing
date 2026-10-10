@@ -7,7 +7,7 @@ import iconInfrastructure from "@/assets/images/directions/icon-infrastructure.s
 import iconAi from "@/assets/images/directions/icon-ai.svg";
 import iconEdo from "@/assets/images/directions/icon-edo.svg";
 import safeService from "@/assets/images/directions/project-safe-service.png";
-import development from "@/assets/images/directions/project-development.png";
+import development from "@/assets/images/projects/development.webp";
 import registration from "@/assets/images/projects/registration.webp";
 import corridor from "@/assets/images/projects/corridor.webp";
 import lochinKoz from "@/assets/images/projects/lochin-koz.webp";

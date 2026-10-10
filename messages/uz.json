@@ -103,7 +103,7 @@
       "development": {
         "title": "Veb va mobil ilovalarni ishlab chiqish",
         "description": "Raqamli mahsulotlarni talablarni tahlil qilish va loyihalashtirishdan tortib, ishga tushirish, texnik qo‘llab-quvvatlash va keyingi rivojlantirishgacha bo‘lgan barcha bosqichlarda ishlab chiqamiz. Davlat tashkilotlari va xususiy sektor uchun turli murakkablik va ko‘lamdagi veb-platformalar hamda mobil ilovalarni yaratamiz.",
-        "imageAlt": "Analitika panellari va kod ochilgan noutbuk",
+        "imageAlt": "Dasturchilar mobil ilova va uning kodini birgalikda ko‘rib chiqmoqda",
         "stats": {
           "projects": { "value": "50+", "label": "amalga oshirilgan loyiha" },
           "specialists": { "value": "200+", "label": "mutaxassis" },
