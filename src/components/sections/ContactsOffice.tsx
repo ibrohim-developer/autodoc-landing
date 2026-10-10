@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
-import { useLocale, useTranslations } from "next-intl";
+import { type Locale, useLocale, useTranslations } from "next-intl";
 import decorGlass from "@/assets/images/directions/decor-glass.webp";
 import officePhoto from "@/assets/images/contacts/office.png";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
@@ -11,14 +11,16 @@ import { contacts, headOffice } from "@/content/navigation";
 const titleId = "contacts-title";
 const focusRing = "rounded-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white";
 
+const mapLanguages: Record<Locale, string> = { uz: "uz_UZ", ru: "ru_RU", en: "en_US" };
+
 // Yandex map widget with a pin on the office. Needs no API key, but always draws its own blue pin.
-function mapSrc(locale: string) {
+function mapSrc(locale: Locale) {
   const point = `${headOffice.lon},${headOffice.lat}`;
   const params = new URLSearchParams({
     ll: point,
     z: "15",
     pt: point,
-    lang: locale === "uz" ? "uz_UZ" : "ru_RU",
+    lang: mapLanguages[locale],
   });
   return `https://yandex.uz/map-widget/v1/?${params}`;
 }

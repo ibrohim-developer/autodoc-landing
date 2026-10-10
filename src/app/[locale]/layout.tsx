@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { localeAlternates, ogLocale } from "@/i18n/metadata";
 import { sfPro } from "@/app/fonts";
 import { SmoothScroll } from "@/components/layout/SmoothScroll";
 import { siteUrl } from "@/lib/site";
@@ -23,16 +24,13 @@ export async function generateMetadata({
     metadataBase: new URL(siteUrl),
     title: t("title"),
     description: t("description"),
-    alternates: {
-      canonical: locale === routing.defaultLocale ? "/" : `/${locale}`,
-      languages: { uz: "/", ru: "/ru", "x-default": "/" },
-    },
+    alternates: localeAlternates("/", locale),
     openGraph: {
       type: "website",
       siteName: "Autodoc",
       title: t("title"),
       description: t("description"),
-      locale: locale === "uz" ? "uz_UZ" : "ru_RU",
+      locale: ogLocale(locale),
     },
   };
 }

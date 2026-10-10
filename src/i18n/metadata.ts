@@ -8,10 +8,15 @@ export function localeAlternates(href: string, locale: Locale) {
 
   return {
     canonical: path(locale),
-    languages: { uz: path("uz"), ru: path("ru"), "x-default": path(routing.defaultLocale) },
+    languages: {
+      ...Object.fromEntries(routing.locales.map((target) => [target, path(target)])),
+      "x-default": path(routing.defaultLocale),
+    },
   };
 }
 
+const ogLocales: Record<Locale, string> = { uz: "uz_UZ", ru: "ru_RU", en: "en_US" };
+
 export function ogLocale(locale: Locale) {
-  return locale === "uz" ? "uz_UZ" : "ru_RU";
+  return ogLocales[locale];
 }

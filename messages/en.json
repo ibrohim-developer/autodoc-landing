@@ -1,0 +1,615 @@
+{
+  "Metadata": {
+    "title": "Autodoc — digital solutions for government and business",
+    "description": "We develop and support digital systems for government and business — from vehicle registration to electronic document management."
+  },
+  "Header": {
+    "home": "Autodoc — go to homepage",
+    "contact": "Contact us",
+    "menu": "Menu",
+    "closeMenu": "Close menu",
+    "language": "Site language"
+  },
+  "Locale": {
+    "ru": "Русский",
+    "uz": "O‘zbekcha",
+    "en": "English"
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About us",
+    "media": "Media Hub",
+    "history": "Our history",
+    "leadership": "Leadership",
+    "projects": "Projects",
+    "career": "Careers",
+    "partners": "Partners",
+    "contacts": "Contacts",
+    "breadcrumbLabel": "Breadcrumb"
+  },
+  "Hero": {
+    "title": "Making public services faster and simpler with digital solutions.",
+    "subtitle": "We develop and support digital systems for government and business — from vehicle registration to electronic document management.",
+    "features": {
+      "govServices": "Digital public services",
+      "analytics": "Systems and analytics",
+      "infrastructure": "Digital infrastructure"
+    }
+  },
+  "PartnerStrip": {
+    "label": "Our partners",
+    "logos": {
+      "iiv": "Ministry of Internal Affairs of the Republic of Uzbekistan",
+      "ovir": "Department of Migration and Citizenship Registration",
+      "transportMinistry": "Ministry of Transport",
+      "temirYol": "Uzbekistan Railways",
+      "worldpay": "Worldpay",
+      "asbt": "ASBT",
+      "cyberpark": "Cyber Park"
+    }
+  },
+  "Stats": {
+    "eyebrow": "AUTODOC IN NUMBERS",
+    "title": "A scale the government trusts",
+    "projects": {
+      "value": "50+",
+      "label": "Projects",
+      "caption": "delivered for government and business",
+      "cta": "View projects"
+    },
+    "partners": {
+      "value": "12",
+      "suffix": "+",
+      "label": "Government partners",
+      "caption": "ministries, agencies and state-owned companies"
+    },
+    "services": {
+      "value": "1",
+      "suffix": "M+",
+      "label": "Services a year",
+      "caption": "provided to citizens through our systems"
+    }
+  },
+  "Position": {
+    "eyebrow": "WHAT WE BELIEVE",
+    "lead": "We believe technology should serve people. Every project we take on aims to make interactions between citizens and the state simpler, faster and more convenient.",
+    "body": "We build digital solutions that bring public services, business and modern technology together into a single, convenient ecosystem. Our goal is not just to automate processes, but to make them clear, reliable and accessible to every user.",
+    "photos": {
+      "entrance": "Entrance to the Autodoc building",
+      "aerial": "Aerial view of the vehicle inspection center",
+      "parking": "Parking lot by the Autodoc building",
+      "pavilion": "Garden and pavilion on the Autodoc grounds",
+      "inspectors": "Vehicle inspection center specialists",
+      "inspection": "A specialist inspecting a car",
+      "building": "Vehicle inspection center building",
+      "bays": "Inspection bays at the vehicle inspection center"
+    }
+  },
+  "Video": {
+    "play": "Watch the company video"
+  },
+  "Directions": {
+    "title": "Business areas",
+    "categories": {
+      "it": "Information technology",
+      "payments": "Payment systems",
+      "finance": "Finance",
+      "transport": "Transport",
+      "infrastructure": "Infrastructure",
+      "ai": "Artificial intelligence and data analytics",
+      "edo": "Electronic document management and digital public services"
+    },
+    "projects": {
+      "development": {
+        "title": "Web and mobile development",
+        "description": "Full-cycle digital product development: from requirements analysis and design to launch, technical support and further growth. We build web platforms and mobile apps for government organizations and commercial companies, taking on projects of any complexity and scale.",
+        "imageAlt": "Laptop showing analytics dashboards and code",
+        "stats": {
+          "projects": { "value": "50+", "label": "projects delivered" },
+          "specialists": { "value": "200+", "label": "specialists" },
+          "years": { "value": "10+", "label": "years on the market" }
+        }
+      },
+      "sms": {
+        "title": "SMS aggregator",
+        "description": "A platform for automated SMS messaging between companies and their customers. It delivers verification codes, service notifications and informational messages through the country’s mobile operators, helping businesses build reliable communication with their users.",
+        "imageAlt": "Safe Service biometric info kiosks",
+        "stats": {
+          "delivery": { "value": "99%", "label": "message delivery rate" }
+        }
+      },
+      "payments": {
+        "title": "Payment system",
+        "description": "Payment infrastructure for settlements between citizens, businesses and government organizations. The system accepts and processes payments for public and commercial services, supporting settlements across online and offline channels.",
+        "imageAlt": "Paying for services with a smartphone at a payment terminal"
+      },
+      "cashRegisters": {
+        "title": "Unified cash register system",
+        "description": "A unified system that brings cash register services together in a shared digital infrastructure. It centralizes cash register operations, simplifies payment transactions and makes cash handling more transparent.",
+        "imageAlt": "Online cash register with a fiscal printer in a store"
+      },
+      "cashCollection": {
+        "title": "Cash collection",
+        "description": "A full range of services for collecting, transporting and processing cash for businesses and organizations. Well-established security and control procedures keep operations reliable at every stage, from picking up the cash to delivering it to its destination.",
+        "imageAlt": "Cash collectors receiving cash bags at an armored vehicle"
+      },
+      "accounting": {
+        "title": "Accounting consulting",
+        "description": "Professional support for businesses in accounting, taxation and financial reporting. We help companies set up accounting processes, comply with legal requirements and make decisions based on reliable financial data.",
+        "imageAlt": "Financial reports and analytics on a laptop"
+      },
+      "registration": {
+        "title": "Vehicle registration and inspection system",
+        "description": "We digitized vehicle registration and technical inspection at traffic police service points. By automating internal processes and simplifying paperwork, we made citizen service faster, more transparent and better organized. This has shortened queues and reduced the workload on staff.",
+        "imageAlt": "An AUTODOC employee carrying out a vehicle inspection"
+      },
+      "corridor": {
+        "title": "Red and green corridor",
+        "description": "A visitor routing system for traffic police centers that speeds up service and reduces the workload on staff. Before the visit, the system checks for outstanding debts and directs the citizen to the appropriate route based on the results.",
+        "imageAlt": "Routing terminal with red and green corridors at a traffic police center"
+      },
+      "dataCenter": {
+        "title": "Data center",
+        "description": "A Tier III data center providing reliable infrastructure for hosting and processing data. It supplies computing power and storage to government organizations, banks, telecom operators, fintech companies and SaaS services. The infrastructure is built for fault tolerance, availability and data security.",
+        "imageAlt": "Data center server room"
+      },
+      "lochinKoz": {
+        "title": "“Lochin Ko‘z”",
+        "description": "An AI-powered video analytics system that recognizes vehicles in traffic and checks their data against government databases. It helps detect violations, monitor compliance with obligations and make traffic enforcement more effective.",
+        "imageAlt": "An operator monitoring traffic video analytics"
+      },
+      "faceId": {
+        "title": "Face ID",
+        "description": "Biometric identification and license plate recognition technology for digital services. It helps verify identities and identify vehicles, improving security and data reliability in the delivery of public services.",
+        "imageAlt": "Terminal for facial biometric identification and license plate recognition"
+      },
+      "safeService": {
+        "title": "Safe Service",
+        "description": "A super app that brings government and commercial services together in one place. Users get access to car services, public services and payments — from checking fines and buying insurance to paying for a wide range of services. A single interface simplifies everyday tasks and makes these services more convenient to use.",
+        "imageAlt": "Safe Service mobile app",
+        "stats": {
+          "users": { "value": "5M+", "label": "users" },
+          "services": { "value": "50+", "label": "services in the app" }
+        }
+      },
+      "appeals": {
+        "title": "Electronic applications",
+        "description": "A system that automatically generates electronic applications from citizens’ requests at traffic police offices. Moving requests to an electronic format simplifies paperwork and reduces paper-based document flow.",
+        "imageAlt": "Online request to the traffic police on a laptop and smartphone"
+      },
+      "kiosks": {
+        "title": "Biometric info kiosks",
+        "description": "Self-service terminals for applying for and collecting driver’s licenses, ID cards and vehicle registration certificates. Biometric identification adds an extra layer of security, and the option of document delivery makes public services even more convenient.",
+        "imageAlt": "Safe Service biometric info kiosks"
+      }
+    },
+    "viewAll": "View all"
+  },
+  "Projects": {
+    "metaTitle": "Business areas — Autodoc",
+    "metaDescription": "Autodoc projects by area: information technology, payment systems, finance, transport, infrastructure, AI and digital public services.",
+    "breadcrumb": "Business areas",
+    "categories": {
+      "it": "Information technology",
+      "payments": "Payment systems",
+      "finance": "Finance",
+      "transport": "Transport",
+      "infrastructure": "Infrastructure",
+      "ai": "AI and data analytics",
+      "edo": "Digital public services"
+    }
+  },
+  "Feedback": {
+    "title": "Get in touch",
+    "subtitle": "Fill out the form and we’ll get back to you shortly",
+    "manager": {
+      "name": "Shahnoza Rustamovna",
+      "role": "Business Development and Partnerships Manager",
+      "quote": "I’ll help you find the right solution for your needs and answer any questions about working with us."
+    },
+    "fields": {
+      "name": "Full name",
+      "phone": "Phone",
+      "topic": "Subject",
+      "message": "Message",
+      "consent": "I agree to the processing of my data"
+    },
+    "submit": "Send",
+    "errors": {
+      "required": "Please fill in this field",
+      "phone": "Enter a number in the format +998 XX XXX XX XX",
+      "consent": "Please confirm your consent to data processing"
+    },
+    "success": {
+      "title": "Thank you! Your request has been received",
+      "text": "We’ll get back to you shortly.",
+      "again": "Send another request"
+    }
+  },
+  "Leaders": {
+    "title": "Leadership team",
+    "people": {
+      "fahriddinov": {
+        "name": "Fahriddinov Sardor",
+        "role": "Founder and Chairman of the Holding"
+      },
+      "inogamov": {
+        "name": "Inogamov Sherzod",
+        "role": "Director of Strategy"
+      },
+      "umarov": { "name": "Umarov Murod", "role": "Director of Investments" },
+      "karimov": {
+        "name": "Karimov Shamsiddin",
+        "role": "Director of Information Technology"
+      },
+      "sodiqov": { "name": "Sodiqov Sayyodbek", "role": "Director" }
+    }
+  },
+  "Trust": {
+    "title": "Trusted by",
+    "text": "We value long-term cooperation and partnerships built on mutual trust, professionalism and a drive for excellence in digital technology.",
+    "logos": {
+      "iiv": "Ministry of Internal Affairs of the Republic of Uzbekistan",
+      "ovir": "Department of Migration and Citizenship Registration",
+      "transportMinistry": "Ministry of Transport",
+      "paynet": "Paynet",
+      "orient": "Orient-IT"
+    }
+  },
+  "News": {
+    "title": "News",
+    "more": "See more"
+  },
+  "Blog": {
+    "metaTitle": "Blog — Autodoc",
+    "metaDescription": "Autodoc news and events: projects, digital solutions for government and business, and life on the team.",
+    "title": "Blog",
+    "details": "Read more",
+    "share": "Share:",
+    "shareOn": "Share on {network}",
+    "linkCopied": "Link copied",
+    "others": "Other news",
+    "prev": "Previous news",
+    "next": "Next news",
+    "more": "See more",
+    "reels": {
+      "title": "Our page",
+      "open": "Watch video {number}",
+      "video": "Video {number}",
+      "play": "Play",
+      "close": "Close",
+      "openInInstagram": "Open in Instagram"
+    },
+    "posts": {
+      "registration": {
+        "title": "Digital vehicle registration and inspection system",
+        "excerpt": "covering the entire process — from data verification to paperwork..",
+        "body": [
+          "A single digital platform automates vehicle registration, technical inspection and related services. The system covers the entire process — from data verification to document processing.",
+          "Thanks to integration with more than 15 government and commercial systems, the platform is already used by over 3 million people and handles more than 120,000 transactions a month."
+        ]
+      },
+      "eidGreeting": {
+        "title": "AUTODOC Holding leadership congratulates the team on Eid al-Adha",
+        "excerpt": "Sardor Shukhratovich prepared a warm and unusual video greeting for employees",
+        "body": [
+          "On May 27, 2026, to mark Eid al-Adha (Qurbon Hayit), Sardor Shukhratovich, founder and chairman of AUTODOC Holding, prepared a warm and unusual video greeting for employees. Although he was abroad during the holidays, Sardor Shukhratovich recorded the video in advance to congratulate the team personally.",
+          "This once again reflects one of the key principles of AUTODOC Holding’s corporate culture: wherever you are, it is important to stay connected with employees and keep communication within the team constant. A strong team is united not only by shared goals, but also by mutual attention, respect and open communication. You can watch the video greeting at the link."
+        ]
+      }
+    }
+  },
+  "Contacts": {
+    "metaTitle": "Contacts — Autodoc",
+    "metaDescription": "Autodoc head office address in Tashkent, phone number and email. Get in touch or send us a request through the website.",
+    "office": {
+      "title": "Head office",
+      "photoAlt": "Autodoc head office building",
+      "addressLabel": "Address:",
+      "address": "Tashkent,\n41 Fayzobod Street",
+      "phoneLabel": "Phone number"
+    },
+    "mapTitle": "Autodoc head office on the map"
+  },
+  "About": {
+    "metaTitle": "About us — Autodoc",
+    "metaDescription": "The history of AUTODOC Holding: from its founding in 2022 to a technology holding with more than 50 digital solutions for government and business.",
+    "eyebrow": "OUR HISTORY",
+    "title": "The AUTODOC journey: from an idea to nationwide government projects",
+    "brandLabel": "AUTODOC logo",
+    "photos": {
+      "office": "At the Autodoc office",
+      "building": "The Autodoc building",
+      "inspectionCenter": "Vehicle inspection center",
+      "facade": "Facade of the Autodoc building",
+      "inspection": "Vehicle inspection",
+      "team": "Autodoc employees at work",
+      "inspectionTeam": "Vehicle inspection center team",
+      "openOffice": "The Autodoc team in the office",
+      "app": "Safe Service mobile app"
+    },
+    "milestones": {
+      "founding": {
+        "year": "2022",
+        "title": "Company founded",
+        "text": "The company was founded on June 27, 2022. Its core focus was developing digital solutions to automate public services and simplify how citizens interact with government bodies."
+      },
+      "firstProject": {
+        "year": "2022",
+        "title": "First project",
+        "text": "We developed an online application system for the Ministry of Internal Affairs and the traffic police, allowing citizens to submit requests and documents electronically without visiting government offices in person."
+      },
+      "partnership": {
+        "year": "2023",
+        "title": "Public-private partnership",
+        "text": "We signed a public-private partnership agreement with the Ministry of Internal Affairs to introduce digital solutions and develop modern services for citizens."
+      },
+      "infrastructure": {
+        "year": "2023",
+        "title": "Infrastructure development",
+        "text": "The holding entered a new stage, introducing advanced AI technologies across all key projects. The project portfolio grew to more than 50 solutions for the public and commercial sectors."
+      },
+      "expansion": {
+        "year": "2025",
+        "title": "Expanding into new areas",
+        "text": "The company began actively developing new digital services. Key projects were delivered, including SafeRoad and platforms for online applications and digital services for drivers."
+      },
+      "holding": {
+        "year": "2025",
+        "title": "Forming the holding",
+        "text": "Building on its completed projects and accumulated experience, the company formed a technology holding that brings together companies and projects in digital services, intelligent systems and infrastructure solutions."
+      }
+    }
+  },
+  "Career": {
+    "metaTitle": "Careers and open positions — Autodoc",
+    "metaDescription": "Open positions at Autodoc Holding. Join the team building digital solutions for public services.",
+    "hero": {
+      "title": "Join our holding!",
+      "subtitle": "Join a team that builds digital solutions for millions of people and is shaping the future of public services",
+      "cta": "About the company"
+    },
+    "advantages": {
+      "eyebrow": "ADVANTAGES",
+      "title": "What makes AUTODOC special",
+      "text": "We combine technology, expertise and a strong team to create digital solutions that transform public services and the lives of millions of people.",
+      "items": {
+        "projects": {
+          "title": "Meaningful projects",
+          "text": "We build solutions used by millions of people"
+        },
+        "team": {
+          "title": "A strong team",
+          "text": "Work alongside experienced specialists and experts"
+        },
+        "growth": {
+          "title": "Continuous growth",
+          "text": "Opportunities to grow and shape government-level products"
+        },
+        "environment": {
+          "title": "A modern workplace",
+          "text": "Flexible processes, modern tools and comfortable offices"
+        },
+        "future": {
+          "title": "Shaping the future",
+          "text": "We develop digital infrastructure and make services more convenient for people"
+        }
+      }
+    },
+    "vacancies": {
+      "title": "Open positions",
+      "city": "City: {city}",
+      "requirements": "Requirements:",
+      "categories": {
+        "development": "Development",
+        "design": "Design",
+        "analytics": "Analytics",
+        "management": "Management"
+      },
+      "employment": {
+        "fullTime": "Full-time",
+        "partTime": "Part-time"
+      },
+      "items": {
+        "softwareEngineer": {
+          "title": "Software Engineer",
+          "city": "Tashkent",
+          "description": "Develop and maintain high-load systems for public services. Work with modern technologies: React, Node.js, PostgreSQL, Docker.",
+          "requirements": [
+            "3+ years of commercial development experience",
+            "Knowledge of JavaScript/TypeScript",
+            "Experience with relational databases",
+            "Understanding of CI/CD principles"
+          ]
+        },
+        "frontendDeveloper": {
+          "title": "Frontend Developer",
+          "city": "Tashkent",
+          "description": "Build interfaces for government portals and personal accounts used by millions of citizens.",
+          "requirements": [
+            "2+ years of experience with React",
+            "Strong knowledge of TypeScript",
+            "Responsive and accessible markup",
+            "Experience working with REST APIs"
+          ]
+        },
+        "backendDeveloper": {
+          "title": "Backend Developer",
+          "city": "Tashkent",
+          "description": "Design APIs and services for processing applications and payments and for integrating with government agency systems.",
+          "requirements": [
+            "3+ years of development experience in Node.js or Go",
+            "Knowledge of PostgreSQL and Redis",
+            "Experience with message queues",
+            "Understanding of microservice architecture"
+          ]
+        },
+        "mobileDeveloper": {
+          "title": "Mobile Developer",
+          "city": "Tashkent",
+          "description": "Develop iOS and Android apps for accessing public services.",
+          "requirements": [
+            "2+ years of experience with Flutter or React Native",
+            "Publishing apps to the App Store and Google Play",
+            "Working with push notifications",
+            "Knowledge of clean architecture principles"
+          ]
+        },
+        "qaEngineer": {
+          "title": "QA Engineer",
+          "city": "Tashkent",
+          "description": "Ensure the quality of web and mobile services through manual and automated testing.",
+          "requirements": [
+            "2+ years of testing experience",
+            "Writing test cases and checklists",
+            "Experience with automated tests in Playwright or Selenium",
+            "API testing in Postman"
+          ]
+        },
+        "devopsEngineer": {
+          "title": "DevOps Engineer",
+          "city": "Tashkent",
+          "description": "Support infrastructure and delivery processes for mission-critical government systems.",
+          "requirements": [
+            "3+ years of experience with Linux",
+            "Docker and Kubernetes",
+            "Setting up CI/CD",
+            "Monitoring: Prometheus, Grafana"
+          ]
+        },
+        "productDesigner": {
+          "title": "Product Designer",
+          "city": "Tashkent",
+          "description": "Design clear interfaces for digital public services — from research to finished mockups.",
+          "requirements": [
+            "2+ years of experience in product design",
+            "Proficiency in Figma",
+            "Working with design systems",
+            "Conducting user research"
+          ]
+        },
+        "businessAnalyst": {
+          "title": "Business Analyst",
+          "city": "Tashkent",
+          "description": "Gather and document requirements for government information systems, working with clients and the development team.",
+          "requirements": [
+            "2+ years of business analysis experience",
+            "Process modeling in BPMN",
+            "Writing technical specifications and user stories",
+            "Basic knowledge of SQL"
+          ]
+        }
+      }
+    },
+    "resume": {
+      "open": "Submit your resume",
+      "title": "Submit your resume",
+      "subtitle": "Fill out the form and we’ll get back to you shortly",
+      "close": "Close",
+      "fields": {
+        "name": "Full name",
+        "phone": "Phone",
+        "position": "Position",
+        "otherPosition": "Other position",
+        "about": "About yourself",
+        "resume": "Upload your resume",
+        "upload": "Upload resume"
+      },
+      "submit": "Submit",
+      "errors": {
+        "required": "Please fill in this field",
+        "phone": "Enter a number in the format +998 XX XXX XX XX",
+        "resume": "Attach your resume in PDF, DOC or DOCX format",
+        "fileSize": "The file must not exceed 10 MB"
+      },
+      "success": {
+        "title": "Application sent",
+        "text": "Your application has been sent successfully.",
+        "home": "Back to home"
+      }
+    }
+  },
+  "Partners": {
+    "metaTitle": "Partners — Autodoc",
+    "metaDescription": "Autodoc Holding partners: the government agencies and companies we build digital services with.",
+    "hero": {
+      "title": "Partnering for a greater future",
+      "subtitle": "We value long-term cooperation and partnerships built on mutual trust, professionalism and a drive for excellence in digital technology.",
+      "cta": "Submit a request"
+    },
+    "title": "Our partners",
+    "items": {
+      "iiv": {
+        "name": "Ichki Ishlar Vazirligi",
+        "caption": "Ministry of Internal Affairs"
+      },
+      "ovir": {
+        "name": "Migratsiya boshqarmasi",
+        "caption": "Department of Migration and Citizenship"
+      },
+      "transportMinistry": {
+        "name": "Transport Vazirligi",
+        "caption": "Ministry of Transport"
+      },
+      "paynet": {
+        "name": "Paynet",
+        "caption": "Payment system"
+      },
+      "orient": {
+        "name": "Orient-IT",
+        "caption": "IT company"
+      },
+      "dyhxx": {
+        "name": "DYHXX",
+        "caption": "State Road Traffic Safety Service"
+      },
+      "temirYol": {
+        "name": "O‘zbekiston temir yo‘llari",
+        "caption": "National railway company"
+      },
+      "worldpay": {
+        "name": "Worldpay",
+        "caption": "Payment system"
+      },
+      "expressPay": {
+        "name": "Express Pay",
+        "caption": "Payment system"
+      },
+      "aloqabank": {
+        "name": "Aloqabank",
+        "caption": "Bank"
+      },
+      "universalbank": {
+        "name": "Universalbank",
+        "caption": "Bank"
+      },
+      "smartbank": {
+        "name": "Smartbank",
+        "caption": "Bank"
+      },
+      "uztelecom": {
+        "name": "Uztelecom",
+        "caption": "Telecommunications company"
+      },
+      "asbt": {
+        "name": "ASBT",
+        "caption": "IT company"
+      },
+      "cyberpark": {
+        "name": "Cyber Park",
+        "caption": "IT company"
+      }
+    }
+  },
+  "Footer": {
+    "navLabel": "Site navigation",
+    "phoneLabel": "Phone:",
+    "emailLabel": "Email",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "back": "Back to home"
+  }
+}
