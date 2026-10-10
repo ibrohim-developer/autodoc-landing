@@ -7,6 +7,15 @@ import { useTranslations } from "next-intl";
 import playIcon from "@/assets/images/icons/play.svg";
 import type { Reel } from "@/content/reels";
 
+// Instagram's embed page for a reel: strip query params and append /embed/.
+function embedUrl(url: string) {
+  const cleanUrl = url.replace(/\?.*$/, "");
+  return cleanUrl.endsWith("/") ? `${cleanUrl}embed/` : `${cleanUrl}/embed/`;
+}
+
+// Height of the profile header at the top of Instagram's embed, hidden in cards.
+const EMBED_HEADER_HEIGHT = 54;
+
 // A scroll-snap row of reels; on wide screens the next card peeks in at the edge.
 // Each card opens one shared dialog that shows the Instagram reel embed via iframe.
 export function ReelsGallery({ reels }: { reels: Reel[] }) {
@@ -23,14 +32,9 @@ export function ReelsGallery({ reels }: { reels: Reel[] }) {
       setCurrent(index);
       setIsLoading(true);
     });
-    // Build the embed URL: strip query params and append /embed/
     const reel = reels[index];
     if (!reel) return;
-    const cleanUrl = reel.url.replace(/\?.*$/, "");
-    const embedUrl = cleanUrl.endsWith("/")
-      ? `${cleanUrl}embed/`
-      : `${cleanUrl}/embed/`;
-    setIframeSrc(embedUrl);
+    setIframeSrc(embedUrl(reel.url));
     dialogRef.current?.showModal();
     closeRef.current?.focus();
   }
@@ -55,13 +59,30 @@ export function ReelsGallery({ reels }: { reels: Reel[] }) {
               onClick={() => open(index)}
               className="group relative block aspect-[329/410] w-full overflow-hidden rounded-card bg-placeholder focus-visible:outline-3 focus-visible:-outline-offset-3 focus-visible:outline-brand"
             >
-              {reel.poster && (
+              {reel.poster ? (
                 <Image
                   src={reel.poster}
                   alt=""
                   sizes="(min-width: 1280px) 330px, (min-width: 1024px) 31vw, (min-width: 640px) 47vw, 78vw"
                   placeholder="blur"
                   className="absolute inset-0 size-full object-cover"
+                />
+              ) : (
+                // No poster yet: show Instagram's own embed as the cover. It is
+                // shifted up to hide the profile header and ignores pointer
+                // events so clicks reach the button and open the modal.
+                <iframe
+                  src={embedUrl(reel.url)}
+                  title=""
+                  aria-hidden="true"
+                  tabIndex={-1}
+                  loading="lazy"
+                  scrolling="no"
+                  style={{
+                    top: -EMBED_HEADER_HEIGHT,
+                    height: `calc(100% + ${EMBED_HEADER_HEIGHT}px)`,
+                  }}
+                  className="pointer-events-none absolute inset-x-0 w-full border-0"
                 />
               )}
               <span className="absolute inset-0 grid place-items-center">
