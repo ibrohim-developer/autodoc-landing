@@ -57,8 +57,8 @@ export const navLinks: { key: NavKey; href: NavHref }[] = [
 ];
 
 export const contacts = {
-  phone: "+998 71 200 00 00",
-  phoneHref: "tel:+998712000000",
+  phone: "+998 55 505 75 75",
+  phoneHref: "tel:+998555057575",
   email: "info@autodoc.uz",
   // Social profile URLs are not in the design yet.
   telegram: "#",

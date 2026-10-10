@@ -13,7 +13,7 @@ export function PartnerStrip() {
   return (
     <section aria-label={t("label")} className="h-[120px] border-b border-line md:h-[185px]">
       <div className="h-full overflow-hidden motion-reduce:overflow-x-auto">
-        <div className="flex h-full w-max animate-marquee [animation-duration:90s] hover:[animation-play-state:paused] motion-reduce:animate-none">
+        <div className="flex h-full w-max animate-marquee [animation-duration:45s] hover:[animation-play-state:paused] motion-reduce:animate-none">
           {copies.map((copy) => (
             <ul key={copy} aria-hidden={copy > 0 || undefined} className={cn("flex", copy > 0 && "motion-reduce:hidden")}>
               {partners.map((partner) => (
