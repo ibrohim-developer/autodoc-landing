@@ -19,6 +19,7 @@ import cashRegisters from "@/assets/images/projects/cash-registers.webp";
 import cashCollection from "@/assets/images/projects/cash-collection.webp";
 import accounting from "@/assets/images/projects/accounting.webp";
 import dataCenter from "@/assets/images/projects/data-center.webp";
+import sms from "@/assets/images/projects/sms.webp";
 import users from "@/assets/images/icons/users.svg";
 import integrations from "@/assets/images/icons/integrations.svg";
 import checkBadge from "@/assets/images/icons/check-badge.svg";
@@ -59,7 +60,7 @@ export const directions: Direction[] = [
     icon: iconIt,
     projects: [
       { key: "development", image: { src: development }, stats: ["projects", "specialists", "years"] },
-      { key: "sms", image: { src: kiosks }, stats: ["delivery"] },
+      { key: "sms", image: { src: sms }, stats: ["delivery"] },
     ],
   },
   {

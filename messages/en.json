@@ -113,7 +113,7 @@
       "sms": {
         "title": "SMS aggregator",
         "description": "A platform for automated SMS messaging between companies and their customers. It delivers verification codes, service notifications and informational messages through the country’s mobile operators, helping businesses build reliable communication with their users.",
-        "imageAlt": "Safe Service biometric info kiosks",
+        "imageAlt": "Team working on the Safe SMS bulk messaging dashboard",
         "stats": {
           "delivery": { "value": "99%", "label": "message delivery rate" }
         }

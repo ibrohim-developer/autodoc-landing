@@ -113,7 +113,7 @@
       "sms": {
         "title": "SMS-aggregator",
         "description": "Kompaniyalar va ularning mijozlari o‘rtasida SMS-xabarlarni avtomatik yuborish uchun mo‘ljallangan platforma. Yechim mamlakatdagi mobil aloqa operatorlari orqali tasdiqlash kodlari, xizmat bildirishnomalari va axborot xabarlarini yetkazib berishni ta’minlab, biznesning mijozlar bilan ishonchli aloqasini yo‘lga qo‘yishga yordam beradi.",
-        "imageAlt": "Biometrik Safe Service infokiosklari",
+        "imageAlt": "Jamoa Safe SMS xabar yuborish paneli bilan ishlamoqda",
         "stats": {
           "delivery": { "value": "99%", "label": "xabarlar yetkazilishi" }
         }
