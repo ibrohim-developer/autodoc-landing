@@ -81,13 +81,13 @@ export function Footer() {
 
           <div className="flex flex-col gap-2 border-t border-white/14 pt-7 pb-8 sm:flex-row lg:pt-[29px]">
             {(["privacy", "terms"] as const).map((key) => (
-              <a
+              <button
                 key={key}
-                href="#"
+                type="button"
                 className="flex h-10 items-center justify-center rounded-[40px] bg-[rgb(124_125_131/0.08)] px-[15px] text-[18px]/[18.9px] whitespace-nowrap tracking-[-0.7px] text-white/39 transition-colors hover:text-white/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:min-w-[265px]"
               >
                 {t(key)}
-              </a>
+              </button>
             ))}
           </div>
         </div>
