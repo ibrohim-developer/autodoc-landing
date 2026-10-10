@@ -123,8 +123,8 @@
         "imageAlt": "To‘lov terminali orqali smartfon bilan xizmatlar uchun to‘lov"
       },
       "cashRegisters": {
-        "title": "Onlayn-kassalar",
-        "description": "Qonunchilik talablariga muvofiq hisob-kitoblarni avtomatlashtirish va fiskal operatsiyalarni amalga oshirish uchun mo‘ljallangan raqamli kassa yechimlari. Ular biznesga savdolar hisobini yuritish, fiskal cheklarni shakllantirish va moliyaviy operatsiyalarning shaffofligini ta’minlashga yordam beradi.",
+        "title": "Yagona kassa xizmatlari tizimi",
+        "description": "Kassa xizmatlarini yagona raqamli infratuzilmada birlashtiruvchi tizim. Yechim kassalarning markazlashgan holda ishlashini ta‘minlaydi, hisob-kitob jarayonlarini soddalashtiradi va kassa xizmatlari shaffofligini oshirishga xizmat qiladi.",
         "imageAlt": "Do‘kondagi fiskal printerli onlayn-kassa"
       },
       "cashCollection": {
@@ -267,7 +267,8 @@
       "open": "{number}-videoni ko‘rish",
       "video": "{number}-video",
       "play": "Ijro etish",
-      "close": "Yopish"
+      "close": "Yopish",
+      "openInInstagram": "Instagram’da ochish"
     },
     "posts": {
       "registration": {
